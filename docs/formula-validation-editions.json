@@ -1,0 +1,38 @@
+{
+  "version": "v1.4.1",
+  "base_version": "v1.2.0",
+  "editions": [
+    {
+      "kind": "browser",
+      "name": "group-explorer-browser-v1.4.1.zip",
+      "files": 115,
+      "changed_files": [
+        "README.md",
+        "site/research-story-sources.zip",
+        "site/research-story.html"
+      ],
+      "preserved_files": 112,
+      "content_inventory_sha256": "aca4798b590bb26f9b19eb28944a6a0442ea80964aa40f9b010fba9da9bd63a9",
+      "seconds": 1.284232784000011,
+      "bytes": 357950853,
+      "sha256": "79a6970aa5df9e28b64095e414de909e85c41d671d4ef54cfe7ca81bdbb9329f"
+    },
+    {
+      "kind": "local",
+      "name": "group-explorer-local-windows-x64-v1.4.1.zip",
+      "files": 3231,
+      "changed_files": [
+        "README.md",
+        "workbench/static/research-story-sources.zip",
+        "workbench/static/research-story.html"
+      ],
+      "preserved_files": 3228,
+      "content_inventory_sha256": "eeec2a6075289c2fc56c9a775d0a8e57e33befc436dbb83c778e75539b8f4066",
+      "seconds": 28.962685262000008,
+      "bytes": 533514846,
+      "sha256": "0cbfb2ef69805251d16c09fc4541157442cb158792ce76d0d8b0fb2c65132d02"
+    }
+  ],
+  "status": "passed",
+  "mode": "packaged"
+}

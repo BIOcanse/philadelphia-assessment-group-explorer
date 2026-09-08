@@ -1,0 +1,274 @@
+{
+  "status": "passed",
+  "checked_at": "2026-09-08T07:41:31.764748+00:00",
+  "version": "v1.4.1",
+  "code_commit": "60eaa9fb4a57ee2c4c840f6089e01e4023ea4ee9",
+  "research_change": "Completed train-only formula derivation and held-out group-mean validation; original analyses preserved",
+  "new_model_experiment": true,
+  "formula_holdout_score": "executed",
+  "experiment_cases": 30,
+  "synthetic_settings": 180,
+  "original_inputs_unchanged": true,
+  "source_hashes": {
+    "outputs/group_means/record_bins.csv": "504671e6a3c9deab0a4a46cb97c35501e8b25a466313e0038e74730eb3336e92",
+    "outputs/group_means/bin_definitions.json": "1c29b00be15337061b12a0b4dcba0977b7a202c78d7d4e1daecbee7935038080",
+    "outputs/group_means/main.input.json": "83f00d47dd5a34ad66e928fdc59b35046a679bd2f46abacd43c82f7f9a358daa",
+    "outputs/group_means/positive_garage.input.json": "51a86b3c558f3eb35d9d04607d42ea8b75145fb951848954fb399925d7a39f5f",
+    "outputs/combinations/record_membership.csv": "15b5b4b86b327c2b8b9c6c2cf27813d16f2c6206d1a21ca5a111e07dd10a3457",
+    "scripts/analyze_group_algebra.py": "5ef3236167dd5322f9a19d715c8b59e41cb0d656d2b6129eb61995df1ad1a729",
+    "docs/formula_validation.md": "65e1a9886317d6ca8fd43a3b0385e10232f7f8da522c28b9557c5dcef71b4c34",
+    "outputs/formula_validation/metrics.csv": "287976791828596d55ad2a9e1bfb173967033b31a6661994c0180c29c7ff7600",
+    "outputs/formula_validation/cases.csv": "c435d1e4bae4dabed0e82850c82d4313e164969a0bdae637814ce062baf4919b",
+    "outputs/formula_validation/synthetic/metrics.csv": "9799921ded85a1f62fef4e09d3ab8a12ed246897c2e2f6937e887bb4e33236d6",
+    "outputs/formula_validation/coverage.csv": "79d53eb0f7aa9eef0859f4d21904ae9b30c203c57dd7981c20c7ae2273309dbe",
+    "outputs/formula_validation/validation.json": "448aed8afe4e73ae5918e062eaa65d5fe22e34f4402237b83341e1f260f2abff",
+    "outputs/formula_validation/main_catalog_metrics.csv": "6d32315b6769a6fdfa9664d7861e9584603e32fce6d1561d5aac64f7bd506452",
+    "outputs/formula_validation/positive_garage_catalog_metrics.csv": "739a294594c7c795577b724b627d9b635ab5342a8c19b84b98cefad13c847285",
+    "outputs/formula_validation/main_catalog_summary.json": "d3e3f24c7a24be98743264f3412828215d1c634d2724bd8a6bd050c6f2677e4c",
+    "outputs/formula_validation/positive_garage_catalog_summary.json": "ef18bf9e2d2c3221b6a717ca8bba597ddb1ce143ab5098ad87e9295aa6f53e99",
+    "docs/formula_validation_results.md": "fd6f713e7837b7a50e53e83ac70113fcd3e09109ce4169e3b069c1bb690e8890",
+    "scripts/formula_validation.py": "8708d2f54b24d222021def21f6050f54ceb86e151817a10b0516242ec17ddc0f",
+    "scripts/validate_formula_validation.py": "60c6e4765da059a0b3721f785749124c9194fcc78070e6d9f8e97aa1da73f759",
+    "scripts/scan_formula_groups.cpp": "fc36ee190044b5e5700723631b49d0dd3725b821546dd44680d4cbc7fffc198a",
+    "scripts/scan_formula_groups.py": "15ad3f0f40f293afdd2e7cb473ae5f92e567d912fbe5bc904dd3c8e66bda9b9a",
+    "outputs/formula_validation/main/random-20260908-100/groups.csv": "1995a9e5780798c36bf73a8935a36e8b248a953275c4094c5cc887c21c0343b0",
+    "outputs/formula_validation/main_catalog_worst.csv": "c5c1c56d9c030fb45cce50a0ed2d6ef4ab18f0697a0487fb51b34d7cd114b146"
+  },
+  "canonical_delivery": {
+    "ok": true,
+    "html": "D:\\Code\\综合性研究\\数据科学个人项目_第一个6周_系统性高估和低估\\outputs\\formula_validation_report\\research-story.html",
+    "stages": {
+      "validation": "passed",
+      "package": "passed",
+      "verification": "passed"
+    },
+    "counts": {
+      "blocks": 28,
+      "charts": 8,
+      "html": 0,
+      "metrics": 0,
+      "tables": 3
+    },
+    "sourceDialog": "passed",
+    "sourceInteraction": "keyboard_menu_semantic_click",
+    "viewports": [
+      1440,
+      1200
+    ],
+    "timings": {
+      "validateAndPackageMs": 3498.1,
+      "staticChartExtractionMs": 3426.3,
+      "browserRunMs": 228.7,
+      "totalMs": 6271.8
+    },
+    "scope": "PC-only validation at 1440 and 1200 pixels; user-requested scope"
+  },
+  "links": {
+    "local": {
+      "status": "passed",
+      "base": "http://127.0.0.1:8767/",
+      "checks": [
+        "desktop entry",
+        "report navigation",
+        "edition-relative backlink",
+        "evidence download",
+        "original workbench return"
+      ]
+    },
+    "public": {
+      "status": "passed",
+      "base": "https://biocanse.github.io/philadelphia-assessment-group-explorer/",
+      "checks": [
+        "desktop entry",
+        "report navigation",
+        "edition-relative backlink",
+        "evidence download",
+        "original workbench return"
+      ]
+    }
+  },
+  "group_links": {
+    "local": {
+      "status": "passed",
+      "checks": [
+        {
+          "id": "main-02124043",
+          "conditions": "面积 / Area = 1500–<2000 ft² AND 卧室 / Bedrooms = ≥4卧室 / bedrooms AND 制造业占比 / Manufacturing share = 0 AND 盗车 / Vehicle theft · 365d / 500m = >3–≤7",
+          "detail": "passed"
+        },
+        {
+          "id": "main-04783053",
+          "conditions": "卧室 / Bedrooms = ≥4卧室 / bedrooms AND 制造业占比 / Manufacturing share = 0 AND 盗车 / Vehicle theft · 365d / 500m = >3–≤7",
+          "detail": "passed"
+        }
+      ]
+    },
+    "public": {
+      "status": "passed",
+      "checks": [
+        {
+          "id": "main-02124043",
+          "conditions": "面积 / Area = 1500–<2000 ft² AND 卧室 / Bedrooms = ≥4卧室 / bedrooms AND 制造业占比 / Manufacturing share = 0 AND 盗车 / Vehicle theft · 365d / 500m = >3–≤7",
+          "detail": "passed"
+        },
+        {
+          "id": "main-04783053",
+          "conditions": "卧室 / Bedrooms = ≥4卧室 / bedrooms AND 制造业占比 / Manufacturing share = 0 AND 盗车 / Vehicle theft · 365d / 500m = >3–≤7",
+          "detail": "passed"
+        }
+      ]
+    }
+  },
+  "public_files": {
+    "status": "passed",
+    "version": "v1.4.1",
+    "base": "https://biocanse.github.io/philadelphia-assessment-group-explorer/",
+    "files": [
+      {
+        "file": "index.html",
+        "bytes": 7551,
+        "sha256": "12e2d0b0d971252ca6c6ba064a72a9f9ee0594ced55007e24e14b0f7a50ea08a",
+        "status": "identical"
+      },
+      {
+        "file": "research-story.html",
+        "bytes": 1036654,
+        "sha256": "4491b00c221a53680b6ad7aba51409ae7b5be4f6cb9748a5ecbaf00c41626051",
+        "status": "identical"
+      },
+      {
+        "file": "research-story-sources.zip",
+        "bytes": 3399476,
+        "sha256": "3db7230ef8b8b34c2a07621d85f6f2edabd364f0586a72d7f8e73da1267f2431",
+        "status": "identical"
+      }
+    ]
+  },
+  "remote_packaging": {
+    "version": "v1.4.1",
+    "base_version": "v1.2.0",
+    "editions": [
+      {
+        "kind": "browser",
+        "name": "group-explorer-browser-v1.4.1.zip",
+        "files": 115,
+        "changed_files": [
+          "README.md",
+          "site/research-story-sources.zip",
+          "site/research-story.html"
+        ],
+        "preserved_files": 112,
+        "content_inventory_sha256": "aca4798b590bb26f9b19eb28944a6a0442ea80964aa40f9b010fba9da9bd63a9",
+        "seconds": 1.284232784000011,
+        "bytes": 357950853,
+        "sha256": "79a6970aa5df9e28b64095e414de909e85c41d671d4ef54cfe7ca81bdbb9329f"
+      },
+      {
+        "kind": "local",
+        "name": "group-explorer-local-windows-x64-v1.4.1.zip",
+        "files": 3231,
+        "changed_files": [
+          "README.md",
+          "workbench/static/research-story-sources.zip",
+          "workbench/static/research-story.html"
+        ],
+        "preserved_files": 3228,
+        "content_inventory_sha256": "eeec2a6075289c2fc56c9a775d0a8e57e33befc436dbb83c778e75539b8f4066",
+        "seconds": 28.962685262000008,
+        "bytes": 533514846,
+        "sha256": "0cbfb2ef69805251d16c09fc4541157442cb158792ce76d0d8b0fb2c65132d02"
+      }
+    ],
+    "status": "passed",
+    "mode": "packaged"
+  },
+  "local_expected_inventory": {
+    "version": "v1.4.1",
+    "base_version": "v1.2.0",
+    "editions": [
+      {
+        "kind": "browser",
+        "name": "group-explorer-browser-v1.4.1.zip",
+        "files": 115,
+        "changed_files": [
+          "README.md",
+          "site/research-story-sources.zip",
+          "site/research-story.html"
+        ],
+        "preserved_files": 112,
+        "content_inventory_sha256": "aca4798b590bb26f9b19eb28944a6a0442ea80964aa40f9b010fba9da9bd63a9",
+        "seconds": 0.6019264999777079
+      },
+      {
+        "kind": "local",
+        "name": "group-explorer-local-windows-x64-v1.4.1.zip",
+        "files": 3231,
+        "changed_files": [
+          "README.md",
+          "workbench/static/research-story-sources.zip",
+          "workbench/static/research-story.html"
+        ],
+        "preserved_files": 3228,
+        "content_inventory_sha256": "eeec2a6075289c2fc56c9a775d0a8e57e33befc436dbb83c778e75539b8f4066",
+        "seconds": 3.2578378000180237
+      }
+    ],
+    "status": "passed",
+    "mode": "expected"
+  },
+  "anonymous_downloads": {
+    "status": "passed",
+    "assets": [
+      {
+        "name": "edition-patch-manifest.json",
+        "status": 200,
+        "bytes": 1190
+      },
+      {
+        "name": "group-explorer-browser-v1.4.1.zip",
+        "status": 200,
+        "bytes": 357950853
+      },
+      {
+        "name": "group-explorer-local-windows-x64-v1.4.1.zip",
+        "status": 200,
+        "bytes": 533514846
+      },
+      {
+        "name": "SHA256SUMS.txt",
+        "status": 200,
+        "bytes": 210
+      }
+    ]
+  },
+  "release": {
+    "id": 384523867,
+    "url": "https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/tag/v1.4.1",
+    "draft": false,
+    "published_at": "2026-09-08T07:37:18Z"
+  },
+  "workflows": {
+    "package": {
+      "conclusion": "success",
+      "databaseId": 34200025014,
+      "headSha": "60eaa9fb4a57ee2c4c840f6089e01e4023ea4ee9",
+      "status": "completed",
+      "url": "https://github.com/BIOcanse/philadelphia-assessment-group-explorer/actions/runs/34200025014"
+    },
+    "pages": {
+      "conclusion": "success",
+      "databaseId": 34200252374,
+      "headSha": "60eaa9fb4a57ee2c4c840f6089e01e4023ea4ee9",
+      "status": "completed",
+      "url": "https://github.com/BIOcanse/philadelphia-assessment-group-explorer/actions/runs/34200252374"
+    }
+  },
+  "local_edition": "outputs/group_publication/local",
+  "local_browser_edition": "outputs/group_pages",
+  "reviews": [
+    "Independent formula and statistical-results review passed",
+    "Independent numerical validation passed",
+    "Visible-reader group tooltips and actual navigation passed after the UI patch"
+  ],
+  "scope": "Internal retrospective validation with frozen historical bins. Group means are scored; overlapping groups are not independent observations. No new external confirmation or causal identification is claimed."
+}
