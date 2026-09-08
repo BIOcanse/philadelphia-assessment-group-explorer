@@ -1,0 +1,29 @@
+{
+  "version": "v1.3.0",
+  "base_version": "v1.2.0",
+  "timestamp": "2026-09-08T06:12:42+00:00",
+  "editions": [
+    {
+      "kind": "browser",
+      "base_name": "group-explorer-browser-v1.2.0.zip",
+      "base_sha256": "dbc5dfa31e59259b7e9ec0f9226ace23df4de76e73306b94c5dac0bf7dda5f9e",
+      "name": "group-explorer-browser-v1.3.0.zip",
+      "replacements": {
+        "site/research-story.html": "workbench/static/research-story.html",
+        "site/research-story-sources.zip": "workbench/static/research-story-sources.zip",
+        "README.md": "workbench/publication/README.md"
+      }
+    },
+    {
+      "kind": "local",
+      "base_name": "group-explorer-local-windows-x64-v1.2.0.zip",
+      "base_sha256": "b6094ebf3b7f911b87ecef15c742a27371ca256f841ef609b9d48d1679449296",
+      "name": "group-explorer-local-windows-x64-v1.3.0.zip",
+      "replacements": {
+        "workbench/static/research-story.html": "workbench/static/research-story.html",
+        "workbench/static/research-story-sources.zip": "workbench/static/research-story-sources.zip",
+        "README.md": "workbench/publication/local-edition.md"
+      }
+    }
+  ]
+}
