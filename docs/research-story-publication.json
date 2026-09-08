@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "release": "v1.2.0",
+  "release_id": 384461921,
+  "commit": "682bc7fd83f59f49a66de3a701f141095e0fc66f",
+  "pages_run": 34191572422,
+  "pages_status": "success",
+  "report_url": "https://biocanse.github.io/philadelphia-assessment-group-explorer/research-story.html",
+  "live_assets": [
+    {
+      "file": "research-story.html",
+      "sha256": "1b7df4d3280da9fa5441d668c60c37cbef367a4fa635ca39664a5865ee4fe3b9",
+      "bytes": 654225
+    },
+    {
+      "file": "research-story-sources.zip",
+      "sha256": "0f5e734569567ff44186ab448b6024b13ba2c03de2dad4d43866ba0d1b83e961",
+      "bytes": 43636
+    },
+    {
+      "file": "index.html",
+      "sha256": "12e2d0b0d971252ca6c6ba064a72a9f9ee0594ced55007e24e14b0f7a50ea08a",
+      "bytes": 7551
+    }
+  ],
+  "links": {
+    "local": {
+      "status": "passed",
+      "base": "http://127.0.0.1:8767/",
+      "checks": [
+        "desktop entry",
+        "report navigation",
+        "edition-relative backlink",
+        "evidence download",
+        "original workbench return"
+      ]
+    },
+    "public": {
+      "status": "passed",
+      "base": "https://biocanse.github.io/philadelphia-assessment-group-explorer/",
+      "checks": [
+        "desktop entry",
+        "report navigation",
+        "edition-relative backlink",
+        "evidence download",
+        "original workbench return"
+      ]
+    }
+  },
+  "edition_assets": [
+    {
+      "name": "group-explorer-browser-v1.2.0.zip",
+      "bytes": 354206717,
+      "sha256": "dbc5dfa31e59259b7e9ec0f9226ace23df4de76e73306b94c5dac0bf7dda5f9e"
+    },
+    {
+      "name": "group-explorer-local-windows-x64-v1.2.0.zip",
+      "bytes": 515546919,
+      "sha256": "b6094ebf3b7f911b87ecef15c742a27371ca256f841ef609b9d48d1679449296"
+    }
+  ],
+  "original_inputs_unchanged": true,
+  "R_script_execution": "not run"
+}
