@@ -33,3 +33,7 @@
 - 4图、1表、17块的canonical报告通过载荷、阅读及来源交互验证。完整组数据与排序复核通过。
 - base R复算脚本已提供；当前环境未找到R，尚未执行，不能称为R验收完成。
 - package_research_story.py将验证后的HTML和有界证据ZIP复制到共享UI；初始交接原文不公开打包。
+
+## 发布完成
+
+v1.2.0已公开发布，两版远端SHA与本地一致、匿名下载通过。Pages运行34191572422成功；本地与公开入口各5项集成检查通过，线上HTML、证据ZIP和入口逐字节一致。原统计输入哈希未变。最终记录：outputs/research_story/publication-validation.json。
