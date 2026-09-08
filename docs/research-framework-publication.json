@@ -1,0 +1,221 @@
+{
+  "status": "passed",
+  "checked_at": "2026-09-08T06:25:08.158838+00:00",
+  "version": "v1.3.0",
+  "code_commit": "5adb9f84d201c9ce27b10056e456a1a45b4adc90",
+  "research_change": "Reorganized the evidence and introduction around group differences, algebraic representation, and validation of the derivation method",
+  "new_model_experiment": false,
+  "formula_holdout_score": "not yet computed",
+  "original_inputs_unchanged": true,
+  "source_hashes": {
+    "outputs/group_bias/report_summary.json": "3993549e9a48e4c16312721ab2de134bf213514be5f70cadfa1b3bbf3893559b",
+    "outputs/group_bias/threshold_counts.csv": "248eaf24f275c7a25101af3fe7fcd6ace85dd2ece9823895593bf167682197ea",
+    "outputs/conditional/source_scope.csv": "90e7f455cec66e3a1e7d184ec7a44b253f01cbe950c3fc13d27f05010b2befdd",
+    "outputs/group_algebra/main_orders.csv": "641a47a32ce4b1951d52a0f148edb363e71262c11db7d003fd3ca49f755d368d",
+    "outputs/group_algebra/positive_garage_orders.csv": "b4a8b72c5d89ac15f0550a55d15ae2e31d450441a37704b7e0eed8b87e3615d4",
+    "outputs/group_algebra/main_summary.json": "0185bea030e3ad4cea1ad81273932a81f0ec57fff2e97aab89e8492b8ff2af91",
+    "outputs/group_algebra/positive_garage_summary.json": "e9720d1429f2000cd8bd386f26abe24386da55a63c75d43f84d809bf661274af",
+    "outputs/group_workbench/registry.json": "4501f580e9e1c4795bb227a7b91010c22427cb37cd9ba47866ad9ecc809a0f1e",
+    "outputs/group_means/main.input.json": "83f00d47dd5a34ad66e928fdc59b35046a679bd2f46abacd43c82f7f9a358daa",
+    "docs/group_algebra.md": "a17fd0e966a30589e050c2214b7c16fc15e2a9ad3820bc3de37fba50fe41bc5f",
+    "docs/group_mean_ranking.md": "a6cc006c340aee283e439562edd0a6d080305071ebb86aa280f4a054e258ef30",
+    "docs/group_bias_followup.md": "5454111e06ed02035daa0a8ebce2fdbb060ba9d3c60c8ce74c3cc37de294e60d",
+    "docs/selection_bias_policy.md": "3577f44a9dfcac607880f61c9aa40924b5b16fe827e89da4fd57e14635088e5a",
+    "docs/research_framework.md": "18562c41405ef65886cd2c01f6fe57b3a9fbfdb09ad77357434075f2e2aaff20"
+  },
+  "canonical_delivery": {
+    "ok": true,
+    "html": "D:\\Code\\综合性研究\\数据科学个人项目_第一个6周_系统性高估和低估\\outputs\\research_overview\\research-story.html",
+    "stages": {
+      "validation": "passed",
+      "package": "passed",
+      "verification": "passed"
+    },
+    "counts": {
+      "blocks": 14,
+      "charts": 3,
+      "html": 0,
+      "metrics": 0,
+      "tables": 1
+    },
+    "sourceDialog": "passed",
+    "sourceInteraction": "keyboard_menu_semantic_click",
+    "viewports": [
+      1440,
+      390
+    ],
+    "timings": {
+      "validateAndPackageMs": 3466.9,
+      "staticChartExtractionMs": 3356.6,
+      "browserRunMs": 1608.8,
+      "readerReadyMs": 179.1,
+      "contentChecksMs": 32.1,
+      "sourceDialogMs": 31.9,
+      "responsiveChecksMs": 32.1,
+      "verificationMs": 1649.5,
+      "totalMs": 5130
+    }
+  },
+  "links": {
+    "local": {
+      "status": "passed",
+      "base": "http://127.0.0.1:8767/",
+      "checks": [
+        "desktop entry",
+        "report navigation",
+        "edition-relative backlink",
+        "evidence download",
+        "original workbench return"
+      ]
+    },
+    "public": {
+      "status": "passed",
+      "base": "https://biocanse.github.io/philadelphia-assessment-group-explorer/",
+      "checks": [
+        "desktop entry",
+        "report navigation",
+        "edition-relative backlink",
+        "evidence download",
+        "original workbench return"
+      ]
+    }
+  },
+  "public_content": {
+    "status": "passed",
+    "files": [
+      {
+        "file": "research-story.html",
+        "bytes": 556159,
+        "sha256": "14662e9e2e52beda46eded51ebb5f39114807622d257f7b56aaa34de994fe7cb"
+      },
+      {
+        "file": "research-story-sources.zip",
+        "bytes": 38342,
+        "sha256": "01e82fe5cc8cb0da822f0bcb3d03b7ff7c80afb44354355cf255d0594627041c"
+      },
+      {
+        "file": "index.html",
+        "bytes": 7551,
+        "sha256": "12e2d0b0d971252ca6c6ba064a72a9f9ee0594ced55007e24e14b0f7a50ea08a"
+      }
+    ]
+  },
+  "edition_update": {
+    "version": "v1.3.0",
+    "base_version": "v1.2.0",
+    "editions": [
+      {
+        "kind": "browser",
+        "name": "group-explorer-browser-v1.3.0.zip",
+        "files": 115,
+        "changed_files": [
+          "README.md",
+          "site/research-story-sources.zip",
+          "site/research-story.html"
+        ],
+        "preserved_files": 112,
+        "content_inventory_sha256": "cc57c2ae007a39d297aa9f3b6b16b1efe53322adada9b0e6af8d75af8b074a08",
+        "seconds": 1.2690164800000048,
+        "bytes": 354107861,
+        "sha256": "c9e2d67d23228ad71648fd8a9e0bf99ccfcd551e01c6af4b53e409738db35802"
+      },
+      {
+        "kind": "local",
+        "name": "group-explorer-local-windows-x64-v1.3.0.zip",
+        "files": 3231,
+        "changed_files": [
+          "README.md",
+          "workbench/static/research-story-sources.zip",
+          "workbench/static/research-story.html"
+        ],
+        "preserved_files": 3228,
+        "content_inventory_sha256": "33ee49f611bac8f7d510787ac55a9641dedd1e698630b4a41c9fbad9a1029b41",
+        "seconds": 31.99517479100001,
+        "bytes": 530170904,
+        "sha256": "0828252d3f9ad26e90084373074c631810d3a3dc28325cdd956f8b7bf54c127c"
+      }
+    ],
+    "status": "passed",
+    "mode": "packaged"
+  },
+  "local_expected_inventory": {
+    "version": "v1.3.0",
+    "base_version": "v1.2.0",
+    "editions": [
+      {
+        "kind": "browser",
+        "name": "group-explorer-browser-v1.3.0.zip",
+        "files": 115,
+        "changed_files": [
+          "README.md",
+          "site/research-story-sources.zip",
+          "site/research-story.html"
+        ],
+        "preserved_files": 112,
+        "content_inventory_sha256": "cc57c2ae007a39d297aa9f3b6b16b1efe53322adada9b0e6af8d75af8b074a08",
+        "seconds": 0.5866670000250451
+      },
+      {
+        "kind": "local",
+        "name": "group-explorer-local-windows-x64-v1.3.0.zip",
+        "files": 3231,
+        "changed_files": [
+          "README.md",
+          "workbench/static/research-story-sources.zip",
+          "workbench/static/research-story.html"
+        ],
+        "preserved_files": 3228,
+        "content_inventory_sha256": "33ee49f611bac8f7d510787ac55a9641dedd1e698630b4a41c9fbad9a1029b41",
+        "seconds": 3.1818682000157423
+      }
+    ],
+    "status": "passed",
+    "mode": "expected"
+  },
+  "anonymous_downloads": {
+    "status": "passed",
+    "assets": [
+      {
+        "name": "edition-patch-manifest.json",
+        "status": 200,
+        "bytes": 1190
+      },
+      {
+        "name": "group-explorer-browser-v1.3.0.zip",
+        "status": 200,
+        "bytes": 354107861
+      },
+      {
+        "name": "group-explorer-local-windows-x64-v1.3.0.zip",
+        "status": 200,
+        "bytes": 530170904
+      },
+      {
+        "name": "SHA256SUMS.txt",
+        "status": 200,
+        "bytes": 210
+      }
+    ]
+  },
+  "release": {
+    "id": 384486321,
+    "url": "https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/tag/v1.3.0",
+    "draft": false
+  },
+  "workflows": {
+    "package": {
+      "run": 34194189298,
+      "conclusion": "success"
+    },
+    "pages": {
+      "run": 34194358170,
+      "conclusion": "success"
+    }
+  },
+  "local_edition": "outputs/group_publication/local",
+  "local_browser_edition": "outputs/group_pages",
+  "reviews": [
+    "Evidence inventory completed",
+    "Independent method and narrative review passed"
+  ]
+}
