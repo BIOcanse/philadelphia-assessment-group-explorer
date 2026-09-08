@@ -27,7 +27,7 @@ with ZipFile(STATIC/'research-story-sources.zip','w',ZIP_DEFLATED) as z:
     for path in sorted(OUT.iterdir()):
         if path.suffix=='.csv' or path.name in {'artifact.json','validation.json','report_delivery_validation.json','research_story.md'}:
             z.write(path,path.relative_to(ROOT).as_posix())
-    for path in [builder,ROOT/'scripts/package_research_story.py',ROOT/'scripts/deliver_report.mjs',plan]:
+    for path in [builder,ROOT/'scripts/package_research_story.py',ROOT/'scripts/deliver_report.mjs',ROOT/'scripts/report_group_links.mjs',plan]:
         z.write(path,path.relative_to(ROOT).as_posix())
     for relative in args.extra_source:
         path=(ROOT/relative).resolve();assert path.is_relative_to(ROOT) and path.is_file()

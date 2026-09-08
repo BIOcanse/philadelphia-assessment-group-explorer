@@ -1,6 +1,6 @@
 # Browser edition — static hosting
 
-Use the [live workbench](https://biocanse.github.io/philadelphia-assessment-group-explorer/) or download the [browser ZIP](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.4.0/group-explorer-browser-v1.4.0.zip).
+Use the [live workbench](https://biocanse.github.io/philadelphia-assessment-group-explorer/) or download the [browser ZIP](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.4.1/group-explorer-browser-v1.4.1.zip).
 
 Version 1.4 includes the completed formula-validation story, eight figures, three tables, and a downloadable evidence bundle. All original workbench analyses and group data remain available. The interface and report are designed and checked for desktop use.
 
