@@ -2,7 +2,8 @@
 import { pathToFileURL } from 'node:url';
 import { writeFileSync } from 'node:fs';
 import path from 'node:path';
-const [inputPath='outputs/report/artifact.json',outputPath='outputs/report/初版报告_Draft_Report.html',readyTimeout='20000']=process.argv.slice(2);
+const [inputPath='outputs/report/artifact.json',outputPath='outputs/report/初版报告_Draft_Report.html',readyTimeout='20000',viewportScope]=process.argv.slice(2);
+if(viewportScope&&viewportScope!=='--desktop-only')throw new Error('Unknown viewport scope');
 const outputDir=path.dirname(outputPath);
 const readyTimeoutMs=Number(readyTimeout);
 if(!Number.isSafeInteger(readyTimeoutMs)||readyTimeoutMs<=0||readyTimeoutMs>60000)throw new Error('Reader timeout must be between 1 and 60000 ms.');
@@ -16,10 +17,16 @@ const headEnd=packaged.lastIndexOf('</head>');
 if (headEnd<0 || !/^<\/head>\s*<body>/.test(packaged.slice(headEnd))) throw new Error('Reader head was not found.');
 const fix='<style>#data-analytics-portable-reader .analytics-top-bar{width:calc(100% + 2 * var(--ds-gutter));margin-left:calc(-1 * var(--ds-gutter));margin-right:calc(-1 * var(--ds-gutter));}</style>';
 const runtimeHtml=packaged.slice(0,headEnd)+fix+packaged.slice(headEnd);
+const dependencies={build:(input,options={})=>buildPortableArtifact(input,{...options,runtimeHtml})};
+if(viewportScope==='--desktop-only'){
+ const {verifyDesktopReport}=await import('./verify_report_desktop.mjs');
+ dependencies.verify=options=>verifyDesktopReport(options,plugin);
+}
 const result=await deliverPortableArtifact({
  inputPath,outputPath,
  readyTimeoutMs,timeoutMs:Math.max(40000,readyTimeoutMs),screenshotPath:path.join(outputDir,'render_failure.png')
-},{build:(input,options={})=>buildPortableArtifact(input,{...options,runtimeHtml})});
+},dependencies);
+if(viewportScope==='--desktop-only')result.scope='PC-only validation at 1440 and 1200 pixels; user-requested scope';
 writeFileSync(path.join(outputDir,'report_delivery_validation.json'),JSON.stringify(result,null,2));
 console.log(JSON.stringify(result));
 if (!result.ok) process.exitCode=1;

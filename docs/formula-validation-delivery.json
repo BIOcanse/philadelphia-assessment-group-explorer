@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "html": "D:\\Code\\综合性研究\\数据科学个人项目_第一个6周_系统性高估和低估\\outputs\\formula_validation_report\\research-story.html",
+  "stages": {
+    "validation": "passed",
+    "package": "passed",
+    "verification": "passed"
+  },
+  "counts": {
+    "blocks": 28,
+    "charts": 8,
+    "html": 0,
+    "metrics": 0,
+    "tables": 3
+  },
+  "sourceDialog": "passed",
+  "sourceInteraction": "keyboard_menu_semantic_click",
+  "viewports": [
+    1440,
+    1200
+  ],
+  "timings": {
+    "validateAndPackageMs": 3516.6,
+    "staticChartExtractionMs": 3440.8,
+    "browserRunMs": 223.3,
+    "totalMs": 6191.7
+  },
+  "scope": "PC-only validation at 1440 and 1200 pixels; user-requested scope"
+}

@@ -1,6 +1,8 @@
 # Local edition — Windows x64
 
-Download the [portable local ZIP](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.3.0/group-explorer-local-windows-x64-v1.3.0.zip), extract the entire archive to a writable folder, and double-click **Start.cmd**. Your browser opens at [http://127.0.0.1:8767/](http://127.0.0.1:8767/). Use **Stop.cmd** to stop this copy.
+Download the [portable local ZIP](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.4.0/group-explorer-local-windows-x64-v1.4.0.zip), extract the entire archive to a writable folder, and double-click **Start.cmd**. Your browser opens at [http://127.0.0.1:8767/](http://127.0.0.1:8767/). Use **Stop.cmd** to stop this copy.
+
+Version 1.4 adds the completed validation of our algebraic formula: 30 real-data experiments, 180 known-answer settings, and held-out group-mean scores. Open **Research story** in the workbench header for the bilingual findings and downloadable evidence, including fitted equations and an executed audit notebook. All original analyses and group data remain available. The interface and report are designed and checked for desktop use.
 
 The package contains Python 3.13.15, NumPy 2.3.5, pandas 3.0.1 and their required dependencies. No Python installation, package download or administrator access is required. The server and data remain on your computer, and all queries work offline. The bundled executable is for Windows x64; use the browser edition on other systems.
 
