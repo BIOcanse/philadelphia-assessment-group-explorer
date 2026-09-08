@@ -1,0 +1,34 @@
+{
+  "version": "v1.4.0",
+  "base_version": "v1.2.0",
+  "editions": [
+    {
+      "kind": "browser",
+      "name": "group-explorer-browser-v1.4.0.zip",
+      "files": 115,
+      "changed_files": [
+        "README.md",
+        "site/research-story-sources.zip",
+        "site/research-story.html"
+      ],
+      "preserved_files": 112,
+      "content_inventory_sha256": "49911ae17fc64f344be6893cf207f79e3d8f6ed2f5ae30cfe94a7f44567502df",
+      "seconds": 0.7224565999931656
+    },
+    {
+      "kind": "local",
+      "name": "group-explorer-local-windows-x64-v1.4.0.zip",
+      "files": 3231,
+      "changed_files": [
+        "README.md",
+        "workbench/static/research-story-sources.zip",
+        "workbench/static/research-story.html"
+      ],
+      "preserved_files": 3228,
+      "content_inventory_sha256": "502a1ccba67c151fbce386fd5e5162b5510b439e8487e5f1a35539c53128da96",
+      "seconds": 3.6548222999554127
+    }
+  ],
+  "status": "passed",
+  "mode": "expected"
+}

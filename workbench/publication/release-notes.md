@@ -1,19 +1,20 @@
-# Research Framework v1.3.0
+# Formula Validation v1.4.0
 
-[Read the revised research introduction](https://biocanse.github.io/philadelphia-assessment-group-explorer/research-story.html) · [Full workbench](https://biocanse.github.io/philadelphia-assessment-group-explorer/)
+[Read the research story](https://biocanse.github.io/philadelphia-assessment-group-explorer/research-story.html) · [Full workbench](https://biocanse.github.io/philadelphia-assessment-group-explorer/)
 
-The introduction now follows the actual research: discover group differences, derive a unified expression, validate the derivation method, then assess stable patterns and applications.
+The separate research story now reports completed validation of our algebraic formula and the method that derives it. Scores compare predicted and observed GROUP arithmetic means of sale/original-assessment ratios.
 
-- A source-backed inventory separates completed work, supported conclusions and outstanding evidence.
-- Three figures explain group support, an existing conditional comparison and observed-support rank.
-- Exact in-sample reconstruction is clearly separated from generalization. No held-out r or R² for the algebraic formula has yet been computed; earlier price correlations and gradient-boosting scores are not its validation results.
-- The next study uses existing data to retrain the formula on subsets and evaluate held-out GROUP means, with simple baselines, learning curves and support/space/time checks. These experiments are planned, not claimed as completed.
-- All original analyses, group IDs and workbench tools remain unchanged.
+- 30 real-data experiments cover nested training fractions, train-only degree selection through all 20/21 fields, and profile, spatial, and chronological holdouts. 180 known-answer settings test additive and higher-order signals, noise, and unseen states.
+- In the main fixed holdout, the prespecified additive formula achieves r = 0.774, predictive R² = 0.508 and RMSE = 1.37 percentage points on 74 eligible single-field groups. The original unregularized degree-three formula has R² = −0.425.
+- All 7,598,906 existing canonical groups were scanned against their held-out members. Among 132,602 main-sample groups with distinct test membership and at least 30 test transactions, additive and degree-three R² are 0.376 and −0.261. This is a separate group-scoring family; overlapping groups are not independent evidence.
+- Explicit-design checks support the mathematical equivalence. Known four-way signals can be recovered when training support identifies them. Exact reconstruction and greater complexity do not guarantee stable prediction; joint gains vary across splits. Regularization and more stable training-only selection are proposed next steps, not completed improvements.
+- Eight figures and three tables show findings, learning curves, transfer scores, and known-answer experiments. The evidence ZIP includes saved formulas, split records, scores, source checks, and an executed audit notebook. Desktop rendering, source interaction, and independent numerical validation passed.
+- Original analyses, workbench tools, data, and group IDs are preserved. Findings remain internal to the retained historical samples; they do not establish causal effects or citywide generalization.
 
 Both complete editions are maintained:
 
-- [Browser edition v1.3.0](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.3.0/group-explorer-browser-v1.3.0.zip)
-- [Local Windows x64 edition v1.3.0](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.3.0/group-explorer-local-windows-x64-v1.3.0.zip)
-- [Checksums](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.3.0/SHA256SUMS.txt)
+- [Browser edition v1.4.0](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.4.0/group-explorer-browser-v1.4.0.zip)
+- [Local Windows x64 edition v1.4.0](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.4.0/group-explorer-local-windows-x64-v1.4.0.zip)
+- [Checksums](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.4.0/SHA256SUMS.txt)
 
-The archives are rebuilt from verified v1.2.0 packages with an explicit three-file update per edition. Every other member is preserved and verified. The local edition still includes its runtime and full data. Prior releases remain available.
+The archives update three publication files per edition in the verified v1.2.0 base packages: the story, its evidence ZIP, and the README. All other members are preserved and individually verified; they are also unchanged in v1.3.0. The local edition includes its runtime and full data. Prior releases remain available.
