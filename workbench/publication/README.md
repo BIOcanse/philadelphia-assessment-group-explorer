@@ -14,10 +14,10 @@ Both editions are maintained. They share group identifiers, the bilingual interf
 
 | Edition | Download | How it runs |
 | --- | --- | --- |
-| Browser / GitHub Pages | [Browser edition v1.4.0](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.4.0/group-explorer-browser-v1.4.0.zip) | Static files; all queries run in a browser Web Worker. No Python backend. |
-| Local / Windows x64 | [Portable local edition v1.4.0](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.4.0/group-explorer-local-windows-x64-v1.4.0.zip) | Extract and run **Start.cmd**. Python and dependencies are included. Works offline. |
+| Browser / GitHub Pages | [Browser edition v1.4.1](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.4.1/group-explorer-browser-v1.4.1.zip) | Static files; all queries run in a browser Web Worker. No Python backend. |
+| Local / Windows x64 | [Portable local edition v1.4.1](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.4.1/group-explorer-local-windows-x64-v1.4.1.zip) | Extract and run **Start.cmd**. Python and dependencies are included. Works offline. |
 
-[SHA-256 checksums](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.4.0/SHA256SUMS.txt) · [Local edition instructions](docs/local-edition.md) · [Browser edition instructions](docs/browser-edition.md)
+[SHA-256 checksums](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.4.1/SHA256SUMS.txt) · [Local edition instructions](docs/local-edition.md) · [Browser edition instructions](docs/browser-edition.md)
 
 The local edition retains the Excel group dictionary, CSV exports, full Parquet catalogs, and the Python query API. The browser edition provides CSV and Parquet downloads. The complete data is included in both release packages; a source checkout alone does not contain the datasets.
 

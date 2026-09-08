@@ -20,10 +20,10 @@
     1200
   ],
   "timings": {
-    "validateAndPackageMs": 3516.6,
-    "staticChartExtractionMs": 3440.8,
-    "browserRunMs": 223.3,
-    "totalMs": 6191.7
+    "validateAndPackageMs": 3498.1,
+    "staticChartExtractionMs": 3426.3,
+    "browserRunMs": 228.7,
+    "totalMs": 6271.8
   },
   "scope": "PC-only validation at 1440 and 1200 pixels; user-requested scope"
 }

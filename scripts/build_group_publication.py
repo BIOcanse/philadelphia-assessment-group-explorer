@@ -17,7 +17,7 @@ OUT = ROOT / 'outputs/group_publication'
 LOCAL = OUT / 'local'
 DOWNLOADS = OUT / 'downloads'
 TEMPLATES = ROOT / 'workbench/publication'
-VERSION = 'v1.4.0'
+VERSION = 'v1.4.1'
 PYTHON_ZIP = 'python-3.13.15-embed-amd64.zip'
 PYTHON_SHA = 'd1f04d990aee1253d8569e8e5104e30fa9f5fa830899f14843448872d936a2cf'
 APP_FILES = [
@@ -137,7 +137,8 @@ def prepare(repository):
                                  'scripts/formula_validation.py','scripts/validate_formula_validation.py',
                                  'scripts/scan_formula_groups.py','scripts/scan_formula_groups.cpp',
                                  'scripts/report_formula_validation.py','scripts/notebook_formula_validation.py',
-                                 'scripts/verify_report_desktop.mjs','notebooks/formula_validation.ipynb']:
+                                 'scripts/verify_report_desktop.mjs','scripts/report_group_links.mjs',
+                                 'scripts/verify_formula_story_groups.mjs','notebooks/formula_validation.ipynb']:
         copy(ROOT / relative, repository / relative)
     for name in ['Start.cmd', 'Stop.cmd', 'start-local.ps1']:
         copy(ROOT / 'workbench/distribution' / name, repository / 'workbench/distribution' / name)
@@ -155,6 +156,7 @@ def prepare(repository):
     copy(ROOT / 'outputs/research_overview/report_delivery_validation.json', repository / 'docs/research-framework-delivery.json')
     copy(ROOT / 'docs/formula_validation.md', repository / 'docs/formula-validation.md')
     copy(ROOT / 'docs/formula_validation_results.md', repository / 'docs/formula-validation-results.md')
+    copy(ROOT / 'docs/report_group_link_hints.md', repository / 'docs/report-group-link-hints.md')
     copy(ROOT / 'outputs/formula_validation/validation.json', repository / 'docs/formula-validation-checks.json')
     copy(ROOT / 'outputs/formula_validation_report/report_delivery_validation.json', repository / 'docs/formula-validation-delivery.json')
     copy(ROOT / 'docs/research_story.md', repository / 'docs/research-story.md')

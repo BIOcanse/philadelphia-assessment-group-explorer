@@ -1,6 +1,8 @@
-# Formula Validation v1.4.0
+# Formula Validation v1.4.1
 
 [Read the research story](https://biocanse.github.io/philadelphia-assessment-group-explorer/research-story.html) · [Full workbench](https://biocanse.github.io/philadelphia-assessment-group-explorer/)
+
+This patch restores condition tooltips and exact group-ID navigation in the formula story. All statistical results are unchanged from v1.4.0.
 
 The separate research story now reports completed validation of our algebraic formula and the method that derives it. Scores compare predicted and observed GROUP arithmetic means of sale/original-assessment ratios.
 
@@ -13,8 +15,8 @@ The separate research story now reports completed validation of our algebraic fo
 
 Both complete editions are maintained:
 
-- [Browser edition v1.4.0](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.4.0/group-explorer-browser-v1.4.0.zip)
-- [Local Windows x64 edition v1.4.0](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.4.0/group-explorer-local-windows-x64-v1.4.0.zip)
-- [Checksums](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.4.0/SHA256SUMS.txt)
+- [Browser edition v1.4.1](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.4.1/group-explorer-browser-v1.4.1.zip)
+- [Local Windows x64 edition v1.4.1](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.4.1/group-explorer-local-windows-x64-v1.4.1.zip)
+- [Checksums](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.4.1/SHA256SUMS.txt)
 
 The archives update three publication files per edition in the verified v1.2.0 base packages: the story, its evidence ZIP, and the README. All other members are preserved and individually verified; they are also unchanged in v1.3.0. The local edition includes its runtime and full data. Prior releases remain available.

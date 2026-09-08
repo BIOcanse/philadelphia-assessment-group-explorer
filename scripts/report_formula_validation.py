@@ -206,7 +206,7 @@ new.append(prose('residuals','''## 12 · 将预测误差重新连接到具体条
 
 Residuals identify where the selected equation misses the specified held-out group means. Post-test extreme residuals are exploratory diagnostics, not independently confirmed mechanisms.
 '''))
-scatter=pd.read_csv(INPUT/'main/random-20260908-100/groups.csv')
+scatter=read('outputs/formula_validation/main/random-20260908-100/groups.csv')
 scatter=scatter[scatter.model.eq('selected')&scatter.order.eq(1)].copy()
 group_catalog=Groups('main')
 scatter['group_id']=[group_catalog.lookup(group_catalog.condition_ids(codes.split()))['group_id'] for codes in scatter.condition_codes]
@@ -216,11 +216,13 @@ data('group_residuals',scatter,['outputs/formula_validation/main/random-20260908
     '74 primary main-cohort test groups, n >= 30; first prespecified selected-degree model; full condition descriptions and support retained.')
 new.append(chart('residual-chart','组均值与预测误差 / Group means and prediction errors','scatter','group_residuals',
     '实际均比率 / Observed mean · %','预测误差 / Prediction error · pp',reference=0))
-worst=pd.read_csv(INPUT/'main_catalog_worst.csv').iloc[:2]
+worst=read('outputs/formula_validation/main_catalog_worst.csv').iloc[:2]
+data('group_links',pd.concat([scatter[['group_id','conditions']],worst[['group_id','conditions']]]).drop_duplicates('group_id'),
+    ['outputs/formula_validation/main/random-20260908-100/groups.csv','outputs/formula_validation/main_catalog_worst.csv'],
+    'Canonical group IDs and full source conditions for native report link hints; no prediction or group membership is changed.')
 links=[]
 for row in worst.itertuples():
-    title=row.conditions.replace('"',"'")
-    links.append(f'[{row.group_id}](./index.html#group={row.group_id} "{title}")（测试n={row.test_n}，预测误差{row.error_pp:+.2f}个百分点）')
+    links.append(f'[{row.group_id}](./index.html#group={row.group_id})（测试n={row.test_n}，预测误差{row.error_pp:+.2f}个百分点）')
 new.append(prose('residual-links','按第一预设选阶模型的测试误差选出的核查例子：'+'；'.join(links)+
     '。悬停编号可见原条件，点击返回完整组；工作台显示的是原全样本统计，本页误差使用留出成员。\n\nThese examples are selected after examining test residuals. IDs resolve to the original full-cohort groups; the validation statistics use held-out members.'))
 

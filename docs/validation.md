@@ -1,6 +1,8 @@
 # Research workbench validation
 
-## Formula validation v1.4.0
+## Formula validation v1.4.1
+
+The v1.4.1 patch restores relative links in the interactive reader and source-backed condition hints. Both example IDs have passed real clicks into their exact group details in the local edition, and the workbench-return link is checked inside the visible reader. Statistical scores are unchanged from v1.4.0; final public checks are in the publication record linked below.
 
 The new story reports 30 completed real-data cases and 180 known-answer settings. Independent checks reconstruct primary group means, partition weights, r, predictive R² and baseline skill; compare saved equations with explicit feature designs; and recompute both synthetic truth and observed-mean errors. Every original catalog's test support and ratio sum were checked, with exact test-member deduplication for all-group scores. The core input hashes remain unchanged.
 

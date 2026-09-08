@@ -1,6 +1,6 @@
 # Local edition — Windows x64
 
-Download the [portable local ZIP](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.4.0/group-explorer-local-windows-x64-v1.4.0.zip), extract the entire archive to a writable folder, and double-click **Start.cmd**. Your browser opens at [http://127.0.0.1:8767/](http://127.0.0.1:8767/). Use **Stop.cmd** to stop this copy.
+Download the [portable local ZIP](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.4.1/group-explorer-local-windows-x64-v1.4.1.zip), extract the entire archive to a writable folder, and double-click **Start.cmd**. Your browser opens at [http://127.0.0.1:8767/](http://127.0.0.1:8767/). Use **Stop.cmd** to stop this copy.
 
 Version 1.4 adds the completed validation of our algebraic formula: 30 real-data experiments, 180 known-answer settings, and held-out group-mean scores. Open **Research story** in the workbench header for the bilingual findings and downloadable evidence, including fitted equations and an executed audit notebook. All original analyses and group data remain available. The interface and report are designed and checked for desktop use.
 
