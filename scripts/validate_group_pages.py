@@ -10,7 +10,7 @@ def main():
     tick=time.perf_counter();m=json.loads((SITE/'data/manifest.json').read_text('utf-8'));catalog=Catalog()
     assert m['version']==catalog.manifest['version'] and m['aliases']==catalog.manifest['aliases']
     expected={'index.html','app.js','styles.css','query-client.js','query-worker.js','vendor/plotly.min.js','vendor/PLOTLY_LICENSE.txt','.nojekyll','data/manifest.json',
-              'research.js','research.css','research-data.json','research-data.json.gz','research-sources.zip'}
+              'research.js','research.css','research-data.json','research-data.json.gz','research-sources.zip','research-story.html','research-story-sources.zip'}
     def raw(file):
         expected.add(file['path']);body=(SITE/file['path']).read_bytes()
         assert len(body)==file['bytes'] and hashlib.sha256(body).hexdigest()==file['sha256']

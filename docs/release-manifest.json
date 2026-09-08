@@ -1,18 +1,18 @@
 {
-  "version": "v1.1.0",
+  "version": "v1.2.0",
   "data_version": "groups-b5a7e308e8c6",
   "assets": [
     {
-      "name": "group-explorer-browser-v1.1.0.zip",
-      "bytes": 353508465,
-      "sha256": "f9bb44ca40ace5f73401de634ae28692768a7858d3f15dddb120b7da0e73b9b5"
+      "name": "group-explorer-browser-v1.2.0.zip",
+      "bytes": 354206717,
+      "sha256": "dbc5dfa31e59259b7e9ec0f9226ace23df4de76e73306b94c5dac0bf7dda5f9e"
     },
     {
-      "name": "group-explorer-local-windows-x64-v1.1.0.zip",
-      "bytes": 515201422,
-      "sha256": "a3dd74da222c3401d208ca8bd536c93bd677cd602838d1f9f051855269f66a33"
+      "name": "group-explorer-local-windows-x64-v1.2.0.zip",
+      "bytes": 515546919,
+      "sha256": "b6094ebf3b7f911b87ecef15c742a27371ca256f841ef609b9d48d1679449296"
     }
   ],
-  "local_files": 3229,
-  "archive_seconds": 30.718231400009245
+  "local_files": 3231,
+  "archive_seconds": 26.25540830002865
 }

@@ -1,6 +1,6 @@
 # Browser edition — static hosting
 
-Use the [live workbench](https://biocanse.github.io/philadelphia-assessment-group-explorer/) or download the [browser ZIP](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.1.0/group-explorer-browser-v1.1.0.zip).
+Use the [live workbench](https://biocanse.github.io/philadelphia-assessment-group-explorer/) or download the [browser ZIP](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.2.0/group-explorer-browser-v1.2.0.zip).
 
 The archive contains `site/`, a standalone GitHub Pages workflow, and instructions. Deploy the contents of `site/` with any static HTTP host. A modern browser with Web Workers and `DecompressionStream` is required. No Python query service, database server, API key or sign-in is needed.
 
