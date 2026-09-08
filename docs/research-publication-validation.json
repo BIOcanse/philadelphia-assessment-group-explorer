@@ -1,0 +1,40 @@
+{
+  "status": "ready_to_publish",
+  "version": "v1.1.0",
+  "portable": {
+    "status": "passed",
+    "checks": [
+      "Relocated package owns the localhost service",
+      "Exact packaged asset: research.js",
+      "Exact packaged asset: research.css",
+      "Exact packaged asset: app.js?v=1.1.0",
+      "Exact packaged asset: index.html",
+      "Exact packaged asset: research-data.json.gz",
+      "Exact packaged asset: research-sources.zip",
+      "Portable research snapshot and compression decode",
+      "Portable M025 membership and cohort",
+      "Portable G025 membership and cohort",
+      "Both complete native catalogs"
+    ],
+    "relocation": "Fresh ZIP extraction into a directory with spaces and Chinese characters",
+    "port": 8771
+  },
+  "release": {
+    "version": "v1.1.0",
+    "data_version": "groups-b5a7e308e8c6",
+    "assets": [
+      {
+        "name": "group-explorer-browser-v1.1.0.zip",
+        "bytes": 353508465,
+        "sha256": "f9bb44ca40ace5f73401de634ae28692768a7858d3f15dddb120b7da0e73b9b5"
+      },
+      {
+        "name": "group-explorer-local-windows-x64-v1.1.0.zip",
+        "bytes": 515201422,
+        "sha256": "a3dd74da222c3401d208ca8bd536c93bd677cd602838d1f9f051855269f66a33"
+      }
+    ],
+    "local_files": 3229,
+    "archive_seconds": 30.718231400009245
+  }
+}

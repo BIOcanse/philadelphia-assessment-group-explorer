@@ -62,7 +62,8 @@ class Handler(BaseHTTPRequestHandler):
                     while chunk:=f.read(1024*1024):self.wfile.write(chunk)
                 return
             name='index.html' if path=='/' else path.lstrip('/')
-            if name not in ['index.html','app.js','styles.css','query-client.js','vendor/plotly.min.js']:return self.send({'error':'Not found'},status=404)
+            if name not in ['index.html','app.js','styles.css','query-client.js','vendor/plotly.min.js',
+                            'research.js','research.css','research-data.json','research-data.json.gz','research-sources.zip']:return self.send({'error':'Not found'},status=404)
             file=STATIC/name
             return self.send(file.read_bytes(),mimetypes.guess_type(name)[0] or 'application/octet-stream')
         except (ValueError,KeyError) as e:self.send({'error':str(e)},status=400)

@@ -17,7 +17,7 @@ OUT = ROOT / 'outputs/group_publication'
 LOCAL = OUT / 'local'
 DOWNLOADS = OUT / 'downloads'
 TEMPLATES = ROOT / 'workbench/publication'
-VERSION = 'v1.0.0'
+VERSION = 'v1.1.0'
 PYTHON_ZIP = 'python-3.13.15-embed-amd64.zip'
 PYTHON_SHA = 'd1f04d990aee1253d8569e8e5104e30fa9f5fa830899f14843448872d936a2cf'
 APP_FILES = [
@@ -25,6 +25,7 @@ APP_FILES = [
     'scripts/query_group_means.py', 'scripts/group_mean_schema.py',
     'workbench/static/index.html', 'workbench/static/app.js',
     'workbench/static/styles.css', 'workbench/static/query-client.js',
+    'workbench/static/research.js', 'workbench/static/research.css',
     'workbench/static/vendor/plotly.min.js',
 ]
 
@@ -104,6 +105,7 @@ def prepare(repository):
     OUT.mkdir(parents=True, exist_ok=True)
     registry = json.loads((ROOT / 'outputs/group_workbench/registry.json').read_text('utf-8'))
     data_files = {p.replace('\\', '/') for p in registry['sources']}
+    data_files.update('workbench/static/' + name for name in ['research-data.json','research-data.json.gz','research-sources.zip'])
     for cohort in ['main', 'positive_garage']:
         for side in ['high', 'low']:
             data_files.add(f'outputs/group_means/{cohort}_rank_{side}.npy')
@@ -127,7 +129,9 @@ def prepare(repository):
     repository.mkdir(parents=True, exist_ok=True)
     for relative in APP_FILES + ['workbench/pages/query-client.js', 'workbench/pages/query-worker.js',
                                  'scripts/build_group_pages.py', 'scripts/validate_group_pages.py',
-                                 'scripts/build_group_publication.py']:
+                                 'scripts/build_group_publication.py','scripts/build_research_workbench.py',
+                                 'scripts/test_research_workbench.mjs','scripts/test_research_workbench_races.mjs',
+                                 'scripts/collect_research_workbench_validation.py']:
         copy(ROOT / relative, repository / relative)
     for name in ['Start.cmd', 'Stop.cmd', 'start-local.ps1']:
         copy(ROOT / 'workbench/distribution' / name, repository / 'workbench/distribution' / name)
@@ -136,9 +140,11 @@ def prepare(repository):
     copy(TEMPLATES / 'README.md', repository / 'README.md')
     copy(TEMPLATES / 'THIRD_PARTY_NOTICES.md', repository / 'THIRD_PARTY_NOTICES.md')
     copy(TEMPLATES / 'PLOTLY_LICENSE.txt', repository / 'PLOTLY_LICENSE.txt')
-    for name in ['local-edition.md', 'browser-edition.md', 'methodology.md']:
+    for name in ['local-edition.md', 'browser-edition.md', 'methodology.md', 'validation.md']:
         copy(TEMPLATES / name, repository / 'docs' / name)
     copy(TEMPLATES / 'pages-release.yml', repository / '.github/workflows/pages.yml')
+    copy(ROOT / 'docs/research_workbench.md', repository / 'docs/research-workbench-design.md')
+    copy(ROOT / 'outputs/research_workbench/data-validation.json', repository / 'docs/research-data-validation.json')
     copy(LOCAL / 'requirements-local.txt', repository / 'requirements-local.txt')
     copy(LOCAL / 'runtime-provenance.json', repository / 'docs/runtime-provenance.json')
     write(repository / '.gitignore', 'outputs/\nruntime/\n__pycache__/\n*.pyc\n*.log\n.venv/\n.codex/\n')
@@ -147,7 +153,7 @@ def prepare(repository):
 
 
 def package(repository):
-    artifacts = OUT / 'assets'; artifacts.mkdir(parents=True, exist_ok=True)
+    artifacts = OUT / 'assets' / VERSION; artifacts.mkdir(parents=True, exist_ok=True)
     browser = artifacts / f'group-explorer-browser-{VERSION}.zip'
     copy(ROOT / 'outputs/group_pages/github-pages-release.zip', browser)
     local = artifacts / f'group-explorer-local-windows-x64-{VERSION}.zip'

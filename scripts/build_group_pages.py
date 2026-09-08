@@ -65,7 +65,7 @@ def build_data():
 
 def package_ui():
     SITE.mkdir(parents=True,exist_ok=True)
-    for name in ['index.html','app.js','styles.css']:
+    for name in ['index.html','app.js','styles.css','research.js','research.css','research-data.json','research-data.json.gz','research-sources.zip']:
         shutil.copyfile(ROOT/'workbench/static'/name,SITE/name)
     for name in ['query-client.js','query-worker.js']:
         shutil.copyfile(ROOT/'workbench/pages'/name,SITE/name)

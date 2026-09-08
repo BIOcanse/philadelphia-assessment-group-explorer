@@ -1,0 +1,30 @@
+async (page) => {
+  const checks=[],errors=[];page.on('pageerror',e=>errors.push(e.message));
+  const assert=(ok,label)=>{if(!ok)throw new Error(label);checks.push(label);};
+  const base=await page.evaluate(()=>new URL('./',location.href).href);
+  await page.goto(base);await page.waitForFunction(()=>document.documentElement.dataset.researchReady==='true');
+  await page.selectOption('#researchCohort','positive_garage');await page.fill('#groupInput','P123');await page.locator('#lookupForm button[type=submit]').click();
+  await page.waitForFunction(()=>document.querySelector('#detail .identifier')?.textContent.startsWith('positive_garage-'));
+  assert((await page.locator('#detail').innerText()).includes('G-P000123'),'unqualified profile uses the visible garage cohort');await page.locator('#closeGroup').click();
+  await page.selectOption('#researchCohort','main');await page.locator('#researchNav [data-view="directory"]').click();await page.waitForFunction(()=>document.querySelectorAll('#results .group-row').length===50);
+  await page.evaluate(()=>{const original=GroupQuery.request;window.__originalRequest=original;GroupQuery.request=async path=>{const value=await original.call(GroupQuery,path);if(path.startsWith('/api/atlas'))return new Promise(resolve=>{window.__releaseAtlas=()=>resolve(value);});return value;};});
+  await page.selectOption('#plotMode','tsne');await page.waitForFunction(()=>!!window.__releaseAtlas);
+  await page.selectOption('#plotMode','page');await page.evaluate(()=>window.__releaseAtlas());await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
+  assert((await page.locator('#plotScope').innerText()).startsWith('当前页'),'late atlas response cannot replace the newer mode');
+  assert(await page.evaluate(()=>document.getElementById('scatter').data[0].x.length)===50,'late atlas does not replace page points');
+  await page.evaluate(()=>{GroupQuery.request=window.__originalRequest;});
+  await page.selectOption('#cohort','positive_garage');assert((await page.locator('#researchHost .scope-pill').innerText()).includes('2,148'),'directory heading follows changed cohort');
+  await page.evaluate(()=>{const original=GroupQuery.request;window.__originalRequest=original;GroupQuery.request=async path=>{const value=await original.call(GroupQuery,path);if(path.startsWith('/api/group'))return new Promise(resolve=>{window.__releaseGroup=()=>resolve(value);});return value;};});
+  await page.fill('#groupInput','M025');await page.locator('#lookupForm button[type=submit]').click();await page.waitForFunction(()=>!!window.__releaseGroup);await page.locator('#closeGroup').click();
+  assert(!(await page.url()).includes('group='),'closing a loading dialog clears deep link');
+  await page.evaluate(()=>window.__releaseGroup());await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
+  assert(!(await page.url()).includes('group='),'late group detail cannot restore dismissed deep link');
+  assert(await page.locator('#groupDialog').isHidden(),'late group response cannot reopen dialog');
+  await page.evaluate(()=>{GroupQuery.request=window.__originalRequest;});
+  await page.locator('#researchNav [data-view="interactions"]').click();await page.waitForFunction(()=>!!document.getElementById('interactionChart')?._fullLayout);
+  const [download]=await Promise.all([page.waitForEvent('download'),page.locator('[data-export="interactionChart"]').click()]);
+  const name=base.includes(':8770')?'local':base.includes(':8768')?'static':'public';await download.saveAs('outputs/research_workbench/'+name+'-four-cell.csv');
+  checks.push('four-cell CSV with metric, units and additive expectation saved for reconciliation');
+  assert(errors.length===0,'no JavaScript errors during delayed response checks');
+  return {status:'passed',base,checks,errors};
+}

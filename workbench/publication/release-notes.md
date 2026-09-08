@@ -1,15 +1,21 @@
-# Group Explorer v1.0.0
+# Research Workbench v1.1.0
 
-[Open the live workbench](https://biocanse.github.io/philadelphia-assessment-group-explorer/) · [Repository and documentation](https://github.com/BIOcanse/philadelphia-assessment-group-explorer)
+[Open the live workbench](https://biocanse.github.io/philadelphia-assessment-group-explorer/) · [Repository](https://github.com/BIOcanse/philadelphia-assessment-group-explorer)
 
-The first public release provides two complete editions of the Philadelphia Assessment Group Explorer:
+This release turns group lookup into a complete desktop research workbench. Eight connected views bring the completed findings into the interface: overview, extreme groups, conditional comparisons, four-cell interactions, matrix algebra, model validation, data coverage, and the full group directory.
 
-- **[Browser edition](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.0.0/group-explorer-browser-v1.0.0.zip)** — a static website with all group data and CSV/Parquet downloads. Queries run in a Web Worker; no Python backend is required.
-- **[Local Windows x64 edition](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.0.0/group-explorer-local-windows-x64-v1.0.0.zip)** — an offline portable application with the original Python query service, all native group data, CSV/Parquet catalogs and the Excel companion. Extract the archive and run **Start.cmd**. The runtime is included; use **Stop.cmd** when finished.
-- **[SHA256SUMS.txt](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.0.0/SHA256SUMS.txt)** — checksums for both archives.
+- Hover or keyboard-focus a group ID to see its actual conditions, transaction count and mean sale/assessment ratio. Click to inspect every variable and member without losing the research view.
+- Explore exact group tails and support frontiers, every edge-group tie, and exhaustive expression histograms by order.
+- Inspect 1,920 existing control comparisons and 4,802 four-cell interactions. Common-support losses, unavailable estimates, adjusted residuals and additive expectations remain explicit.
+- Change algebra degree and error tolerance, inspect a real movable profile-kernel matrix, and export chart data and SVG figures.
+- Review spatial/time validation and price-dependent information coverage. The original study, group IDs and estimates are preserved; no models were refitted.
 
-Both editions use the same 7,598,906 distinct-member condition groups and the same group mean of individual sale/original-assessment ratios. Group IDs, aliases, joint conditions, all-variable distributions, ranking, histograms and filtered exports are preserved.
+Both editions are included and maintained:
 
-Data version: `groups-b5a7e308e8c6`. The interface is bilingual; repository and release documentation are in English. Full record/ranking checks, browser interaction tests and portable-runtime comparisons passed. Read the [method and interpretation](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/blob/main/docs/methodology.md) for the retained-sample scope.
+- **[Browser edition](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.1.0/group-explorer-browser-v1.1.0.zip)** — complete static site, exact group data, research evidence tables and CSV/Parquet downloads. Queries run in a Web Worker.
+- **[Local Windows x64 edition](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.1.0/group-explorer-local-windows-x64-v1.1.0.zip)** — portable offline application, original Python/NumPy query service, full research snapshot and group data, Excel companion and bundled runtime. Extract and run **Start.cmd**; use **Stop.cmd** when finished.
+- **[SHA256SUMS.txt](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.1.0/SHA256SUMS.txt)** — archive checksums.
 
-GitHub's automatically generated source archives contain code and documentation. Download the named edition ZIPs above for the complete runnable datasets.
+Data version remains `groups-b5a7e308e8c6`: 7,598,906 distinct-member condition groups across overlapping cohorts. The interface is bilingual and optimized for PC use. Source reconciliation, full catalog comparisons, desktop interactions, asynchronous-state checks and exported matrix/four-cell values were verified in both editions. See [method and interpretation](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/blob/main/docs/methodology.md).
+
+The original [v1.0.0 release](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/tag/v1.0.0) remains available. GitHub's automatic source archives contain code and documentation; use the named edition ZIPs for runnable data packages.

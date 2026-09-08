@@ -1,2 +1,2 @@
-0b1b13698abaec2b08aea99dc77a4d64a03a7e8ce071747f2012dbd195b6e714  group-explorer-browser-v1.0.0.zip
-1f9dc68031eef459f668904e530e5225851b6f5c187bd2ad0b3efee41c00bd7e  group-explorer-local-windows-x64-v1.0.0.zip
+f9bb44ca40ace5f73401de634ae28692768a7858d3f15dddb120b7da0e73b9b5  group-explorer-browser-v1.1.0.zip
+a3dd74da222c3401d208ca8bd536c93bd677cd602838d1f9f051855269f66a33  group-explorer-local-windows-x64-v1.1.0.zip

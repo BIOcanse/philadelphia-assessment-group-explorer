@@ -1,19 +1,15 @@
-# Release validation
+# Research workbench validation
 
-Data version: `groups-b5a7e308e8c6`. Release: `v1.0.0`.
+Release: `v1.1.0`. Data version: `groups-b5a7e308e8c6`. The underlying catalogs, cohort membership and assessment ratios are unchanged from v1.0.0.
 
-- Every browser binary record was compared with the original local arrays: native ID, count, float64 mean, closure and generator. All original high/low ranking sequences and the complete `n >= 100` subsets match.
-- All compressed-data SHA-256 values, decompressed lengths, member identifiers, amounts and category codes were checked. Totals are 5,550,736 main groups and 2,048,170 positive-garage groups, excluding the unrestricted baseline.
-- The browser edition passed 60 numerical and independence checks, including both cohorts at `n >= 1`, `100` and `500`, full histograms, rank order, conditions, member details, aliases and ID boundaries. Browser API requests were blocked during this test; actual page requests remained on the static file host.
-- Both the original local interface and the browser interface passed the same 19 interaction checks: lookup, filters, pagination, plot clicks, export, empty results, and mobile layout. Desktop and 390-pixel mobile screenshots were inspected.
-- CSV downloads from the two editions match cell for cell under the same applied filter. Quoting style may differ without changing cells.
-- The Windows portable package passed 29 comparisons with the established research API using its included Python 3.13.15 runtime. These include both cohorts, three minimum counts, three sort directions, full histograms, representative/root/profile details, all fields and members, combined filters, CSV cells, and the exact original Excel bytes. Start, status and stop were also exercised.
-- The final local ZIP was freshly extracted to a path with spaces and non-ASCII characters and started with its own runtime. M025 and G025 resolved to the expected 325 and 328 members.
-- GitHub's uploaded asset digests exactly match local SHA-256 values for both ZIPs and the checksum file. All three release download links return HTTP 200 without authentication.
-- [The Pages deployment](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/actions/runs/34180632687) completed successfully. The live HTTPS site passed 20 actual browser interaction checks, including both cohorts, lookup, full filtered histograms, plot clicks, CSV and mobile layout. It made no localhost or backend API requests and produced no JavaScript errors.
+The snapshot builder reconciles all 4,802 four-cell comparisons with canonical IDs, exact member counts and means. All 1,920 controls preserve their original and relaxed groups; the 653 available standardizations reconcile their raw/common-support/weighting decomposition. Unavailable estimates remain null. Both exhaustive expression histograms and all profile transaction totals match the saved census.
 
-Machine-readable evidence is in [validation-summary.json](validation-summary.json), [portable-validation.json](portable-validation.json), [browser-package-validation.json](browser-package-validation.json), and [release-manifest.json](release-manifest.json). Release archive hashes are also provided in [SHA256SUMS.txt](SHA256SUMS.txt).
+Every browser binary record and complete ranking sequence was compared with native catalogs. IDs, counts, float64 means, generators, closures, member records and all `n >= 100` subsets match. Static package boundaries, compressed hashes and decompressed lengths passed.
 
-Publication evidence: [extraction-validation.json](extraction-validation.json), [upload-validation.json](upload-validation.json), [download-link-validation.json](download-link-validation.json), and [public-browser-validation.json](public-browser-validation.json).
+The desktop suite exercises all eight views in both cohorts, hovers and keyboard focus, full detail dialogs, deep links, support filters, exact histograms, four-cell contrasts, normalized/weighted kernel values, matrix exports, model gains, coverage and 1200/1440-pixel layouts. The browser edition makes no query-server or localhost API requests.
 
-Local response measurements and local file-server browser timings do not establish public-network performance. Research scope, overlapping groups and historical-data limitations are described in [methodology.md](methodology.md).
+Delayed-response checks cover changing plot mode before an atlas response, using the visible cohort for unqualified profile lookup, synchronized directory headings, and dismissing a loading detail. CSV checks reconcile raw and adjusted four-cell exports, additive predictions and units, and every exported kernel value against the snapshot.
+
+Records: [research-data-validation.json](research-data-validation.json), [research-workbench-validation.json](research-workbench-validation.json), [browser-package-validation.json](browser-package-validation.json), [release-manifest.json](release-manifest.json), and [research-publication-validation.json](research-publication-validation.json). The last records final portable extraction, uploaded asset digests, links and live-site acceptance after publication.
+
+These checks demonstrate fidelity and operation, not causal identification or generalization beyond the retained historical samples. Earlier v1.0.0 runtime/API evidence remains in repository history and the original release.

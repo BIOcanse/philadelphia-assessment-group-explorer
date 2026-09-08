@@ -1,0 +1,284 @@
+{
+  "status": "passed",
+  "data_version": "groups-b5a7e308e8c6",
+  "app_version": "1.1.0",
+  "linked_groups": 9199,
+  "resolved_expressions": 4435,
+  "interactions": 4802,
+  "controls": 1920,
+  "common_support_comparisons": 653,
+  "bytes": 9448252,
+  "seconds": 4.50729290000163,
+  "snapshot_sha256": "2a7a5dcb2c2bad2fdbeab629d0f88140f0539bb2a6f8655fa6638934401a8cf6",
+  "sources": [
+    {
+      "path": "outputs/group_means/main_closure_index.npy",
+      "sha256": "603e17c7e5c2da59477ee580656f4c61de78c1240b34e5af120086e44f4b002c",
+      "bytes": 22203076
+    },
+    {
+      "path": "outputs/group_means/positive_garage_closure_index.npy",
+      "sha256": "52cc77a6cb5a043930b1134e75578734a37ea827aa108c7ec02e28bf82f9146e",
+      "bytes": 8192812
+    },
+    {
+      "path": "outputs/exploration/price_bands_2017.csv",
+      "sha256": "0052a91f96887cc491af1754b89d5e38630f4c072ee38ec35b7dd756a5a0a820",
+      "bytes": 1145,
+      "rows": 8
+    },
+    {
+      "path": "outputs/conditional/source_scope.csv",
+      "sha256": "90e7f455cec66e3a1e7d184ec7a44b253f01cbe950c3fc13d27f05010b2befdd",
+      "bytes": 561,
+      "rows": 3
+    },
+    {
+      "path": "outputs/group_bias/threshold_counts.csv",
+      "sha256": "248eaf24f275c7a25101af3fe7fcd6ace85dd2ece9823895593bf167682197ea",
+      "bytes": 10937,
+      "rows": 60
+    },
+    {
+      "path": "outputs/group_bias/report_summary.json",
+      "sha256": "3993549e9a48e4c16312721ab2de134bf213514be5f70cadfa1b3bbf3893559b",
+      "bytes": 4123
+    },
+    {
+      "path": "outputs/group_bias/standardization.csv",
+      "sha256": "14bc62e13e02ca5a2ba842862695da56e368ca7cdfd91708c3f04252352938f9",
+      "bytes": 918445,
+      "rows": 1920
+    },
+    {
+      "path": "outputs/conditional/interactions.csv",
+      "sha256": "070f0ac6ae270b3c725e2003fc8d3484d4191ba7719b4cea31427ba27516d396",
+      "bytes": 1674392,
+      "rows": 4802
+    },
+    {
+      "path": "outputs/conditional/研究线索_Research_Leads.csv",
+      "sha256": "b35b5763b34db5860fd759ab99828b517178f5cf74d18bdb81104c6c60750483",
+      "bytes": 1141,
+      "rows": 3
+    },
+    {
+      "path": "outputs/conditional/performance.csv",
+      "sha256": "6f1b1ebb3c4df1cd0b15287f4e56273549a9ae80638ae67ed1ff65fe7e3f63d8",
+      "bytes": 3799,
+      "rows": 24
+    },
+    {
+      "path": "outputs/conditional/performance_gains.csv",
+      "sha256": "a41a2ac4144a5a3222306c180dd583734ec84a585bddce7aed405dcb512e4d51",
+      "bytes": 2310,
+      "rows": 12
+    },
+    {
+      "path": "outputs/selection_audit/availability_summary.csv",
+      "sha256": "919df6c68a4ff4eb4a4bc6035d563e1b236d2099add7948cc06b817d31287913",
+      "bytes": 4440,
+      "rows": 13
+    },
+    {
+      "path": "outputs/selection_audit/coverage_by_price.csv",
+      "sha256": "98b3e20fb7c1eb9b2e83ea7c45701af5cb85d6cb045dd492e0cde9cb2a5db4ae",
+      "bytes": 11538,
+      "rows": 104
+    },
+    {
+      "path": "outputs/selection_audit/history_stages_by_price.csv",
+      "sha256": "845d58f813cc9c6470642d6668f27e8a62cbc435f59d37b3830ce08e15880950",
+      "bytes": 885,
+      "rows": 8
+    },
+    {
+      "path": "outputs/edge_groups/summary.json",
+      "sha256": "6d09c4867f29c9fec94f2fcf9cad85d1b385cccbedfc1acde3069020f6a763a1",
+      "bytes": 3724
+    },
+    {
+      "path": "outputs/conditional/report_summary.json",
+      "sha256": "af2c4afb58b25bcc9b2f453f2c38d4fbe32b5483d19dabfeae1789e2af713e37",
+      "bytes": 13481
+    },
+    {
+      "path": "outputs/conditional/report_notes.json",
+      "sha256": "a5d7cf1accd962a503163cc37d64cb6d94a5091f592771e0ce76a9d0f311d91f",
+      "bytes": 2507
+    },
+    {
+      "path": "outputs/group_bias/report_notes.json",
+      "sha256": "a33a63adc5466c530f17c268b07e9e24f01f8119c10e619d82157b42f5253c6c",
+      "bytes": 603
+    },
+    {
+      "path": "outputs/group_algebra/report_notes.json",
+      "sha256": "fdf9ceda52fc2961050715b3cab22b354798c792690bbef7e86cf44d7981bb37",
+      "bytes": 1481
+    },
+    {
+      "path": "outputs/selection_audit/report_notes.json",
+      "sha256": "abefa0c81d17405cb00518d7e8c047389d4e9fbec752f7b79ac6d0ec3b61b0ed",
+      "bytes": 1083
+    },
+    {
+      "path": "outputs/edge_groups/edge_extremes.csv",
+      "sha256": "8296aa5df7bc1588acbc0cb268feade501fc843372038d21870bb5e61986268a",
+      "bytes": 154630,
+      "rows": 119
+    },
+    {
+      "path": "outputs/group_atlas/main_frontier_all_n.csv",
+      "sha256": "85ed1e179953aea87dec6a5f07a0e661ff4f4fe11f1b4e774c1373e38e10b607",
+      "bytes": 337039,
+      "rows": 4724
+    },
+    {
+      "path": "outputs/group_atlas/main_candidates.csv",
+      "sha256": "99af40dbcac820cf94a50da91a40690d169b05540aa91d58c1a5c3ec506a5a96",
+      "bytes": 25502,
+      "rows": 40
+    },
+    {
+      "path": "outputs/group_atlas/main_relaxations.csv",
+      "sha256": "f119ded3531a39970ae229d7433a73bb8f51d8dd8d578a289546bce29530559a",
+      "bytes": 145934,
+      "rows": 237
+    },
+    {
+      "path": "outputs/group_atlas/main_slices.csv",
+      "sha256": "540577eb27283dcbfeac1819eaeb737eeec1f18efc8799023179a9bdd76fa16c",
+      "bytes": 61116,
+      "rows": 840
+    },
+    {
+      "path": "outputs/group_algebra/main_orders.csv",
+      "sha256": "641a47a32ce4b1951d52a0f148edb363e71262c11db7d003fd3ca49f755d368d",
+      "bytes": 922,
+      "rows": 4
+    },
+    {
+      "path": "outputs/group_algebra/main_group_errors.csv",
+      "sha256": "ead58fd55aa1be21682cd6243cce4ecd2059cb8f8c96d305a53b54906828e9c3",
+      "bytes": 3595,
+      "rows": 30
+    },
+    {
+      "path": "outputs/group_algebra/main_worst_groups.csv",
+      "sha256": "8e92cf19215b3a16d16ccbf72a81cd99bb28dadb08230c6ec6a0c081ac63dc7b",
+      "bytes": 9796,
+      "rows": 16
+    },
+    {
+      "path": "outputs/group_algebra/main_unfoldings.csv",
+      "sha256": "a7614d67cc0fd487cf50ac6f02b54347f3c35830e670654628fc1ce965af318f",
+      "bytes": 2034,
+      "rows": 8
+    },
+    {
+      "path": "outputs/group_algebra/main_summary.json",
+      "sha256": "0185bea030e3ad4cea1ad81273932a81f0ec57fff2e97aab89e8492b8ff2af91",
+      "bytes": 1543
+    },
+    {
+      "path": "outputs/edge_groups/main_histogram.csv",
+      "sha256": "396c91520b621bda1bf8af02c6c1b3f14642de5b9d2fb4dad59512ebb030dead",
+      "bytes": 1965,
+      "rows": 38
+    },
+    {
+      "path": "outputs/edge_groups/main_histogram_by_k.csv",
+      "sha256": "8c8ab39c75f8b409aec6d600873db569bc35a3340445fb9bed2725d84e1625fa",
+      "bytes": 19719,
+      "rows": 798
+    },
+    {
+      "path": "outputs/group_algebra/main_profiles.csv",
+      "sha256": "1516ffddfea6f971e3f4baa6e0e7649de43b1cce4299df8a758c460839dc1753",
+      "bytes": 286197,
+      "rows": 3310
+    },
+    {
+      "path": "outputs/group_atlas/positive_garage_frontier_all_n.csv",
+      "sha256": "c8f6919243c93bf5ea1cc9cdf66690d681e538d80cba5383f905adccf96cf06b",
+      "bytes": 169203,
+      "rows": 2060
+    },
+    {
+      "path": "outputs/group_atlas/positive_garage_candidates.csv",
+      "sha256": "5355a933db0beee9dd9ba431e6e868c44976b1093bbc278a28b8f71453295ebc",
+      "bytes": 27027,
+      "rows": 40
+    },
+    {
+      "path": "outputs/group_atlas/positive_garage_relaxations.csv",
+      "sha256": "4b851f44656b43d6b217213bc1ca56f336a810aca217e2d68ffde665405d47a5",
+      "bytes": 158287,
+      "rows": 243
+    },
+    {
+      "path": "outputs/group_atlas/positive_garage_slices.csv",
+      "sha256": "0c435d6fc204408f3a433562adbd41283d371ac0f8877d430a2abcb0713c8802",
+      "bytes": 79662,
+      "rows": 840
+    },
+    {
+      "path": "outputs/group_algebra/positive_garage_orders.csv",
+      "sha256": "b4a8b72c5d89ac15f0550a55d15ae2e31d450441a37704b7e0eed8b87e3615d4",
+      "bytes": 969,
+      "rows": 4
+    },
+    {
+      "path": "outputs/group_algebra/positive_garage_group_errors.csv",
+      "sha256": "8ff431c32d2284c1081fb3356f114e3fe7ca5267c8fa73aac866bc64ff80bb2c",
+      "bytes": 3914,
+      "rows": 30
+    },
+    {
+      "path": "outputs/group_algebra/positive_garage_worst_groups.csv",
+      "sha256": "03afa4c421f53a6262a05d21452b4b711ab96f69e735e7b622909cf83926ed3e",
+      "bytes": 10014,
+      "rows": 16
+    },
+    {
+      "path": "outputs/group_algebra/positive_garage_unfoldings.csv",
+      "sha256": "dae9820ee6ed077aa75e8425e7f661ea86f839c8483493b6f21cac2fce62a13d",
+      "bytes": 2168,
+      "rows": 8
+    },
+    {
+      "path": "outputs/group_algebra/positive_garage_summary.json",
+      "sha256": "e9720d1429f2000cd8bd386f26abe24386da55a63c75d43f84d809bf661274af",
+      "bytes": 1590
+    },
+    {
+      "path": "outputs/edge_groups/positive_garage_histogram.csv",
+      "sha256": "2bbc61e4da81dc7385516a155654937fc28ded74b363c849d4532340cd2cbdee",
+      "bytes": 1948,
+      "rows": 38
+    },
+    {
+      "path": "outputs/edge_groups/positive_garage_histogram_by_k.csv",
+      "sha256": "adda9342e01e53cb422a35e2eee9e848ddf6e8ac8cc65760f8d748d8c3d99e56",
+      "bytes": 20336,
+      "rows": 836
+    },
+    {
+      "path": "outputs/group_algebra/positive_garage_profiles.csv",
+      "sha256": "6e951eaf883fb41d2240c100981d13d85b99159620b945e261a71189351ed0d8",
+      "bytes": 127916,
+      "rows": 1449
+    }
+  ],
+  "checks": [
+    "Every four-cell n and mean matches its canonical group",
+    "Every group summary comes from the exact catalog",
+    "All condition resolutions match the saved closure index",
+    "Common-support decomposition reconciles",
+    "Unavailable controls remain null",
+    "Expression histograms reconcile to exhaustive totals",
+    "Profile counts reconcile to transaction counts",
+    "Support frontiers reconcile to registry counts"
+  ]
+}
