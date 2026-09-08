@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "export_rows": 5,
+  "all_csv_fields_equal": true,
+  "serialization_note": "Public quotes every field; local quotes only as needed. Parsed cells match exactly.",
+  "browser_numeric": {
+    "status": "passed",
+    "checks": 60,
+    "errors": []
+  },
+  "browser_shared_ui": {
+    "status": "passed",
+    "checks": 19,
+    "errors": []
+  },
+  "local_shared_ui": {
+    "status": "passed",
+    "checks": 19,
+    "errors": []
+  }
+}

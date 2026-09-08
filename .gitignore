@@ -1,0 +1,7 @@
+outputs/
+runtime/
+__pycache__/
+*.pyc
+*.log
+.venv/
+.codex/

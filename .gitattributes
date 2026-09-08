@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.bin binary
+*.zip binary
+*.png binary
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+workbench/static/vendor/* -text -diff

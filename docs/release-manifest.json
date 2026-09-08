@@ -1,0 +1,18 @@
+{
+  "version": "v1.0.0",
+  "data_version": "groups-b5a7e308e8c6",
+  "assets": [
+    {
+      "name": "group-explorer-browser-v1.0.0.zip",
+      "bytes": 341603994,
+      "sha256": "0b1b13698abaec2b08aea99dc77a4d64a03a7e8ce071747f2012dbd195b6e714"
+    },
+    {
+      "name": "group-explorer-local-windows-x64-v1.0.0.zip",
+      "bytes": 511340716,
+      "sha256": "1f9dc68031eef459f668904e530e5225851b6f5c187bd2ad0b3efee41c00bd7e"
+    }
+  ],
+  "local_files": 3224,
+  "archive_seconds": 24.83137909998186
+}

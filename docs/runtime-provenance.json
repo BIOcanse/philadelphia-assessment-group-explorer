@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Python",
+    "version": "3.13.15",
+    "file": "python-3.13.15-embed-amd64.zip",
+    "url": "https://www.python.org/ftp/python/3.13.15/python-3.13.15-embed-amd64.zip",
+    "sha256": "d1f04d990aee1253d8569e8e5104e30fa9f5fa830899f14843448872d936a2cf"
+  },
+  {
+    "name": "numpy",
+    "version": "2.3.5",
+    "file": "numpy-2.3.5-cp313-cp313-win_amd64.whl",
+    "url": "https://files.pythonhosted.org/packages/0c/88/e2eaa6cffb115b85ed7c7c87775cb8bcf0816816bc98ca8dbfa2ee33fe6e/numpy-2.3.5-cp313-cp313-win_amd64.whl",
+    "sha256": "00dc4e846108a382c5869e77c6ed514394bdeb3403461d25a829711041217d5b"
+  },
+  {
+    "name": "pandas",
+    "version": "3.0.1",
+    "file": "pandas-3.0.1-cp313-cp313-win_amd64.whl",
+    "url": "https://files.pythonhosted.org/packages/d6/7d/216a1588b65a7aa5f4535570418a599d943c85afb1d95b0876fc00aa1468/pandas-3.0.1-cp313-cp313-win_amd64.whl",
+    "sha256": "9fea306c783e28884c29057a1d9baa11a349bbf99538ec1da44c8476563d1b25"
+  },
+  {
+    "name": "python-dateutil",
+    "version": "2.9.0.post0",
+    "file": "python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+    "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427"
+  },
+  {
+    "name": "six",
+    "version": "1.17.0",
+    "file": "six-1.17.0-py2.py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl",
+    "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274"
+  },
+  {
+    "name": "tzdata",
+    "version": "2026.3",
+    "file": "tzdata-2026.3-py2.py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/e5/6d/b53b99a9f2766d095985947a5782f1702cabb129a34f7a802d7197af832f/tzdata-2026.3-py2.py3-none-any.whl",
+    "sha256": "dc096730c87af6cab1b171c9d532be840741ff5d459015e7f6947bd7d7e54931"
+  }
+]
