@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "inputs_unchanged": {
+    "data/processed/sales_clean.csv": "796f9a9fe6398686df0a4b763ad91f86a742c38f88dcbfc51152492c52f3914a",
+    "outputs/conditional/main_predictions.csv": "a46e010882412b904a3d5a0ca420794af6faffb43986c7635cc994954f7d64a4",
+    "outputs/conditional/positive_garage_predictions.csv": "931b9a3d8a72898115f9cdc3b9d7c52c90202c4e3b1403deeed551819e490210",
+    "outputs/conditional/performance.csv": "6f1b1ebb3c4df1cd0b15287f4e56273549a9ae80638ae67ed1ff65fe7e3f63d8",
+    "outputs/exploration/price_bands_2017.csv": "0052a91f96887cc491af1754b89d5e38630f4c072ee38ec35b7dd756a5a0a820",
+    "outputs/conditional/performance_gains.csv": "a41a2ac4144a5a3222306c180dd583734ec84a585bddce7aed405dcb512e4d51",
+    "outputs/group_bias/threshold_counts.csv": "248eaf24f275c7a25101af3fe7fcd6ace85dd2ece9823895593bf167682197ea",
+    "outputs/conditional/四格组均值_Four_Cell_Means.csv": "9dd9c90f4fef2f9269aba61314a30bc80a6a7d50ec774ec48074310c98589953",
+    "outputs/group_algebra/main_orders.csv": "641a47a32ce4b1951d52a0f148edb363e71262c11db7d003fd3ca49f755d368d",
+    "outputs/conditional/source_scope.csv": "90e7f455cec66e3a1e7d184ec7a44b253f01cbe950c3fc13d27f05010b2befdd"
+  },
+  "initial_brief_sha256": "ee18c5ed9969c77df6acefff7666f8edd68b68c6c679f1127e0bd1c2b2b4b02c",
+  "checks": [
+    "Pearson log-r squared equals simple OLS R²",
+    "Independent QR influence-form CR1 covariance agrees",
+    "Saved-prediction calibration RMSE reconciles to existing performance",
+    "Latest sale per parcel deterministic",
+    "All original input hashes unchanged"
+  ],
+  "new_statistics": [
+    {
+      "sample": "全部2017交易 / All 2017 sales",
+      "n": 8595,
+      "clusters": 8595,
+      "cluster": "parcel_id",
+      "pearson": 0.9827320023846291,
+      "log_pearson": 0.9766560700156495,
+      "ols_r2": 0.953857079098413,
+      "beta": 0.9146517990478017,
+      "se": 0.0024494491862034405,
+      "t": -34.8438340476395,
+      "df": 8594,
+      "p_value": 6.118985694037765e-249,
+      "ci_low": 0.9098502906260224,
+      "ci_high": 0.919453307469581,
+      "intercept": 0.9495455277440347,
+      "q_mean": 1.0878923211445262
+    },
+    {
+      "sample": "每房屋最新一笔 / Latest per parcel",
+      "n": 8595,
+      "clusters": 8595,
+      "cluster": "parcel_id",
+      "pearson": 0.9827320023846287,
+      "log_pearson": 0.9766560700156495,
+      "ols_r2": 0.953857079098413,
+      "beta": 0.9146517990477987,
+      "se": 0.00244944918620323,
+      "t": -34.84383404764372,
+      "df": 8594,
+      "p_value": 6.118985693249707e-249,
+      "ci_low": 0.9098502906260197,
+      "ci_high": 0.9194533074695777,
+      "intercept": 0.9495455277440628,
+      "q_mean": 1.0878923211445262
+    },
+    {
+      "sample": "主组合样本 / Main cohort",
+      "n": 4903,
+      "clusters": 102,
+      "cluster": "grid2km",
+      "pearson": 0.9849218379418051,
+      "log_pearson": 0.9760789857974038,
+      "ols_r2": 0.9527301865152884,
+      "beta": 0.9111571702063755,
+      "se": 0.010123323307813818,
+      "t": -8.776053781177765,
+      "df": 101,
+      "p_value": 4.4150450214085194e-14,
+      "ci_low": 0.8910752199077222,
+      "ci_high": 0.9312391205050289,
+      "intercept": 0.989334467638858,
+      "q_mean": 1.083956822990736
+    }
+  ],
+  "r_execution": "not yet run"
+}

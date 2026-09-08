@@ -1,0 +1,33 @@
+{
+  "ok": true,
+  "html": "D:\\Code\\综合性研究\\数据科学个人项目_第一个6周_系统性高估和低估\\outputs\\research_story\\research-story.html",
+  "stages": {
+    "validation": "passed",
+    "package": "passed",
+    "verification": "passed"
+  },
+  "counts": {
+    "blocks": 17,
+    "charts": 4,
+    "html": 0,
+    "metrics": 0,
+    "tables": 1
+  },
+  "sourceDialog": "passed",
+  "sourceInteraction": "keyboard_menu_semantic_click",
+  "viewports": [
+    1440,
+    390
+  ],
+  "timings": {
+    "validateAndPackageMs": 2544.4,
+    "staticChartExtractionMs": 2486.7,
+    "browserRunMs": 1847.8,
+    "readerReadyMs": 214.1,
+    "contentChecksMs": 32,
+    "sourceDialogMs": 32,
+    "responsiveChecksMs": 32,
+    "verificationMs": 1892.3,
+    "totalMs": 4452.2
+  }
+}

@@ -1,21 +1,19 @@
-# Research Workbench v1.1.0
+# Research Story v1.2.0
 
-[Open the live workbench](https://biocanse.github.io/philadelphia-assessment-group-explorer/) · [Repository](https://github.com/BIOcanse/philadelphia-assessment-group-explorer)
+[Read the research story](https://biocanse.github.io/philadelphia-assessment-group-explorer/research-story.html) · [Open the full workbench](https://biocanse.github.io/philadelphia-assessment-group-explorer/)
 
-This release turns group lookup into a complete desktop research workbench. Eight connected views bring the completed findings into the interface: overview, extreme groups, conditional comparisons, four-cell interactions, matrix algebra, model validation, data coverage, and the full group directory.
+This release adds a separate, bilingual research narrative. It reconnects the original assessment-regressivity question with the completed group research, without replacing the eight workbench views or changing their underlying results.
 
-- Hover or keyboard-focus a group ID to see its actual conditions, transaction count and mean sale/assessment ratio. Click to inspect every variable and member without losing the research view.
-- Explore exact group tails and support frontiers, every edge-group tie, and exhaustive expression histograms by order.
-- Inspect 1,920 existing control comparisons and 4,802 four-cell interactions. Common-support losses, unavailable estimates, adjusted residuals and additive expectations remain explicit.
-- Change algebra degree and error tolerance, inspect a real movable profile-kernel matrix, and export chart data and SVG figures.
-- Review spatial/time validation and price-dependent information coverage. The original study, group IDs and estimates are preserved; no models were refitted.
+- Four interactive charts explain the price gradient, residual group counts, a four-cell interaction, and direct out-of-fold ratio R².
+- New statistics distinguish raw-price Pearson correlation, in-sample log-price R², proportionality tests, and direct ratio prediction R² from the previous calibration-loss improvement metric.
+- The 2017 retained sample contains 8,595 unique parcel IDs, so annual parcel deduplication changes nothing. Cluster-based proportionality inference remains conditional on the selected source data.
+- Conclusions include negative predictive findings, unresolved assessment timing and selection, and a concrete plan for independent validation.
+- Downloadable report evidence includes the canonical artifact, derived tables, Python builder, validation and a base-R reproduction script. Python and QR cross-checks were executed; the R script has not been executed in this environment.
 
-Both editions are included and maintained:
+## Two complete editions
 
-- **[Browser edition](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.1.0/group-explorer-browser-v1.1.0.zip)** — complete static site, exact group data, research evidence tables and CSV/Parquet downloads. Queries run in a Web Worker.
-- **[Local Windows x64 edition](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.1.0/group-explorer-local-windows-x64-v1.1.0.zip)** — portable offline application, original Python/NumPy query service, full research snapshot and group data, Excel companion and bundled runtime. Extract and run **Start.cmd**; use **Stop.cmd** when finished.
-- **[SHA256SUMS.txt](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.1.0/SHA256SUMS.txt)** — archive checksums.
+- [Browser edition v1.2.0](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.2.0/group-explorer-browser-v1.2.0.zip): static site with Web Worker queries, all group data and the self-contained research story.
+- [Local Windows x64 edition v1.2.0](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.2.0/group-explorer-local-windows-x64-v1.2.0.zip): extract and run Start.cmd; the local Python/NumPy service, runtime, Excel companion and all data are included.
+- [SHA256SUMS.txt](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.2.0/SHA256SUMS.txt).
 
-Data version remains `groups-b5a7e308e8c6`: 7,598,906 distinct-member condition groups across overlapping cohorts. The interface is bilingual and optimized for PC use. Source reconciliation, full catalog comparisons, desktop interactions, asynchronous-state checks and exported matrix/four-cell values were verified in both editions. See [method and interpretation](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/blob/main/docs/methodology.md).
-
-The original [v1.0.0 release](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/tag/v1.0.0) remains available. GitHub's automatic source archives contain code and documentation; use the named edition ZIPs for runnable data packages.
+The group-data version remains groups-b5a7e308e8c6. Earlier releases remain available. Use the named edition ZIPs for runnable packages; GitHub source archives alone do not include all datasets.

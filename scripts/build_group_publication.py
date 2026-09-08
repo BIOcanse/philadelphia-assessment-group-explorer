@@ -17,7 +17,7 @@ OUT = ROOT / 'outputs/group_publication'
 LOCAL = OUT / 'local'
 DOWNLOADS = OUT / 'downloads'
 TEMPLATES = ROOT / 'workbench/publication'
-VERSION = 'v1.1.0'
+VERSION = 'v1.2.0'
 PYTHON_ZIP = 'python-3.13.15-embed-amd64.zip'
 PYTHON_SHA = 'd1f04d990aee1253d8569e8e5104e30fa9f5fa830899f14843448872d936a2cf'
 APP_FILES = [
@@ -26,6 +26,7 @@ APP_FILES = [
     'workbench/static/index.html', 'workbench/static/app.js',
     'workbench/static/styles.css', 'workbench/static/query-client.js',
     'workbench/static/research.js', 'workbench/static/research.css',
+    'workbench/static/research-story.html', 'workbench/static/research-story-sources.zip',
     'workbench/static/vendor/plotly.min.js',
 ]
 
@@ -131,7 +132,8 @@ def prepare(repository):
                                  'scripts/build_group_pages.py', 'scripts/validate_group_pages.py',
                                  'scripts/build_group_publication.py','scripts/build_research_workbench.py',
                                  'scripts/test_research_workbench.mjs','scripts/test_research_workbench_races.mjs',
-                                 'scripts/collect_research_workbench_validation.py']:
+                                 'scripts/collect_research_workbench_validation.py', 'scripts/build_research_story.py',
+                                 'scripts/verify_research_story.R','scripts/verify_research_story_links.mjs','scripts/package_research_story.py','scripts/deliver_report.mjs']:
         copy(ROOT / relative, repository / relative)
     for name in ['Start.cmd', 'Stop.cmd', 'start-local.ps1']:
         copy(ROOT / 'workbench/distribution' / name, repository / 'workbench/distribution' / name)
@@ -143,6 +145,9 @@ def prepare(repository):
     for name in ['local-edition.md', 'browser-edition.md', 'methodology.md', 'validation.md']:
         copy(TEMPLATES / name, repository / 'docs' / name)
     copy(TEMPLATES / 'pages-release.yml', repository / '.github/workflows/pages.yml')
+    copy(ROOT / 'docs/research_story.md', repository / 'docs/research-story.md')
+    copy(ROOT / 'outputs/research_story/validation.json', repository / 'docs/research-story-validation.json')
+    copy(ROOT / 'outputs/research_story/report_delivery_validation.json', repository / 'docs/research-story-delivery.json')
     copy(ROOT / 'docs/research_workbench.md', repository / 'docs/research-workbench-design.md')
     copy(ROOT / 'outputs/research_workbench/data-validation.json', repository / 'docs/research-data-validation.json')
     copy(LOCAL / 'requirements-local.txt', repository / 'requirements-local.txt')
