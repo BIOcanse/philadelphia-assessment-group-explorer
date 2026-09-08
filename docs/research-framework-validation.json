@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "outputs/group_bias/report_summary.json": "3993549e9a48e4c16312721ab2de134bf213514be5f70cadfa1b3bbf3893559b",
+    "outputs/group_bias/threshold_counts.csv": "248eaf24f275c7a25101af3fe7fcd6ace85dd2ece9823895593bf167682197ea",
+    "outputs/conditional/source_scope.csv": "90e7f455cec66e3a1e7d184ec7a44b253f01cbe950c3fc13d27f05010b2befdd",
+    "outputs/group_algebra/main_orders.csv": "641a47a32ce4b1951d52a0f148edb363e71262c11db7d003fd3ca49f755d368d",
+    "outputs/group_algebra/positive_garage_orders.csv": "b4a8b72c5d89ac15f0550a55d15ae2e31d450441a37704b7e0eed8b87e3615d4",
+    "outputs/group_algebra/main_summary.json": "0185bea030e3ad4cea1ad81273932a81f0ec57fff2e97aab89e8492b8ff2af91",
+    "outputs/group_algebra/positive_garage_summary.json": "e9720d1429f2000cd8bd386f26abe24386da55a63c75d43f84d809bf661274af",
+    "outputs/group_workbench/registry.json": "4501f580e9e1c4795bb227a7b91010c22427cb37cd9ba47866ad9ecc809a0f1e",
+    "outputs/group_means/main.input.json": "83f00d47dd5a34ad66e928fdc59b35046a679bd2f46abacd43c82f7f9a358daa",
+    "docs/group_algebra.md": "a17fd0e966a30589e050c2214b7c16fc15e2a9ad3820bc3de37fba50fe41bc5f",
+    "docs/group_mean_ranking.md": "a6cc006c340aee283e439562edd0a6d080305071ebb86aa280f4a054e258ef30",
+    "docs/group_bias_followup.md": "5454111e06ed02035daa0a8ebce2fdbb060ba9d3c60c8ce74c3cc37de294e60d",
+    "docs/selection_bias_policy.md": "3577f44a9dfcac607880f61c9aa40924b5b16fe827e89da4fd57e14635088e5a",
+    "docs/research_framework.md": "18562c41405ef65886cd2c01f6fe57b3a9fbfdb09ad77357434075f2e2aaff20"
+  },
+  "original_inputs_unchanged": true,
+  "formula_holdout_validation": "not executed; no score supplied",
+  "new_analysis": false,
+  "checks": [
+    "Existing group support counts reconciled",
+    "Ranks and profile counts checked",
+    "M025 labels decoded from original atoms",
+    "Old results preserved",
+    "No unrelated model score used as formula validation"
+  ],
+  "structure": {
+    "summary": "summary",
+    "question": "question",
+    "scope": "unit",
+    "evidence": "inventory/discovery/comparison/formula",
+    "methods": "formula/validation",
+    "uncertainty": "adjacent to each finding",
+    "next_steps": "next",
+    "conclusion": "conclusion"
+  },
+  "delivery": "Canonical HTML through existing report pipeline; desktop workbench link unchanged."
+}

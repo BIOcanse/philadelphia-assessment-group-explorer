@@ -1,0 +1,35 @@
+name: Update both released editions
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: edition-publication
+  cancel-in-progress: false
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - name: Read the committed publication contract
+        run: |
+          python - <<'PY'
+          import json,os,re
+          c=json.load(open('workbench/publication/update-contract.json'))
+          assert all(re.fullmatch(r'v\d+\.\d+\.\d+',c[k]) for k in ['version','base_version'])
+          with open(os.environ['GITHUB_ENV'],'a') as f:
+            f.write('RELEASE_TAG='+c['version']+'\nBASE_TAG='+c['base_version']+'\n')
+          PY
+      - name: Download the existing editions near the data
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release download "$BASE_TAG" --repo "$GITHUB_REPOSITORY" --pattern 'group-explorer-*.zip' --dir base
+      - name: Apply the explicit file changes and verify every archive member
+        run: python scripts/repackage_group_editions.py --config workbench/publication/update-contract.json --base-dir base --output-dir packaged
+      - name: Create a draft with both verified editions
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --draft --title "Research Framework $RELEASE_TAG" --notes-file workbench/publication/release-notes.md packaged/group-explorer-*.zip packaged/SHA256SUMS.txt packaged/edition-patch-manifest.json

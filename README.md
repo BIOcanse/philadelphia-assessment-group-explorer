@@ -1,6 +1,6 @@
 # Philadelphia Assessment Research Workbench
 
-**[Read the research story](https://biocanse.github.io/philadelphia-assessment-group-explorer/research-story.html)** — a separate answer-first page connecting the original regressivity question to correlation, proportionality, group differences, interactions, prediction and conclusions. The original workbench views and results remain available.
+**[Read the research story](https://biocanse.github.io/philadelphia-assessment-group-explorer/research-story.html)** — a separate guide to observed combination bias, the exact algebraic representation, and the next study: held-out validation of the derivation method itself. No held-out score for that formula has been computed yet. The original workbench views and results remain available.
 
 Explore the completed research on assessment gaps through eight connected views: an overview, extreme groups, conditional comparisons, four-cell interactions, matrix algebra, model validation, data coverage, and the complete group directory. The workbench connects the results to **7,598,906 condition groups**. Hover or focus a group ID to see its conditions and statistics; click to inspect all variables and members without leaving the analysis.
 
@@ -12,10 +12,10 @@ Both editions are maintained. They share group identifiers, the bilingual interf
 
 | Edition | Download | How it runs |
 | --- | --- | --- |
-| Browser / GitHub Pages | [Browser edition v1.2.0](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.2.0/group-explorer-browser-v1.2.0.zip) | Static files; all queries run in a browser Web Worker. No Python backend. |
-| Local / Windows x64 | [Portable local edition v1.2.0](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.2.0/group-explorer-local-windows-x64-v1.2.0.zip) | Extract and run **Start.cmd**. Python and dependencies are included. Works offline. |
+| Browser / GitHub Pages | [Browser edition v1.3.0](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.3.0/group-explorer-browser-v1.3.0.zip) | Static files; all queries run in a browser Web Worker. No Python backend. |
+| Local / Windows x64 | [Portable local edition v1.3.0](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.3.0/group-explorer-local-windows-x64-v1.3.0.zip) | Extract and run **Start.cmd**. Python and dependencies are included. Works offline. |
 
-[SHA-256 checksums](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.2.0/SHA256SUMS.txt) · [Local edition instructions](docs/local-edition.md) · [Browser edition instructions](docs/browser-edition.md)
+[SHA-256 checksums](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.3.0/SHA256SUMS.txt) · [Local edition instructions](docs/local-edition.md) · [Browser edition instructions](docs/browser-edition.md)
 
 The local edition retains the Excel group dictionary, CSV exports, full Parquet catalogs, and the Python query API. The browser edition provides CSV and Parquet downloads. The complete data is included in both release packages; a source checkout alone does not contain the datasets.
 
