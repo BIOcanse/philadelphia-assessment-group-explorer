@@ -29,3 +29,9 @@ Extend the existing published bilingual application into a research workbench. T
 Add a shared research module and style layer, a snapshot builder/validator, and explicit publication/static-server allowlists. Reuse the existing query clients and exact catalogs. Do not introduce another server, framework, fitting pipeline, or second group-ID scheme.
 
 Verify source reconciliation, support counts, group mappings, original versus calibrated units, reference eligibility, null handling, and matrix values. Exercise all views, filters, cross-view group navigation, hover/focus behavior, hash restoration and delayed-request races in both editions. The user's latest scope prioritizes PC use exclusively: validate desktop layouts at 1440 and 1200 pixels and favor readable charts, tables and keyboard/mouse workflows. No further phone-layout work or phone acceptance criteria. Publish a new release containing both complete editions and retain v1.0.0.
+
+## Delivered v1.1.0
+
+Application commit: `056ecf4d2d77af1f301ec88fda19a165d30b81c7`. Release: https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/tag/v1.1.0 . Live site: https://biocanse.github.io/philadelphia-assessment-group-explorer/ . Both complete editions and v1.0.0 are retained. The original local service at port 8767 is updated; temporary validation services on 8770/8771 were stopped.
+
+The snapshot links 9,199 cited native groups, 4,802 four-cell comparisons and 1,920 control comparisons. Local/static/live desktop suites passed 64/65/65 checks, plus nine delayed-response checks and 584 export-value checks per surface. Fresh portable extraction passed 11 boot/asset/query checks. Uploaded hashes, anonymous download links and live asset bytes match. Canonical evidence: `outputs/research_workbench/workbench-validation.json` and `publication-validation.json`.

@@ -1,5 +1,5 @@
 {
-  "status": "ready_to_publish",
+  "status": "passed",
   "version": "v1.1.0",
   "portable": {
     "status": "passed",
@@ -36,5 +36,184 @@
     ],
     "local_files": 3229,
     "archive_seconds": 30.718231400009245
-  }
+  },
+  "uploaded_assets": [
+    {
+      "name": "group-explorer-browser-v1.1.0.zip",
+      "bytes": 353508465,
+      "digest": "sha256:f9bb44ca40ace5f73401de634ae28692768a7858d3f15dddb120b7da0e73b9b5",
+      "url": "https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.1.0/group-explorer-browser-v1.1.0.zip"
+    },
+    {
+      "name": "group-explorer-local-windows-x64-v1.1.0.zip",
+      "bytes": 515201422,
+      "digest": "sha256:a3dd74da222c3401d208ca8bd536c93bd677cd602838d1f9f051855269f66a33",
+      "url": "https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.1.0/group-explorer-local-windows-x64-v1.1.0.zip"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 210,
+      "digest": "sha256:8e53a0b593a37bd9f32ab6da9f5d56d4370eaf4a98f070187065a5784ad74c86",
+      "url": "https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.1.0/SHA256SUMS.txt"
+    }
+  ],
+  "release_id": 384440042,
+  "download_links": [
+    {
+      "name": "group-explorer-browser-v1.1.0.zip",
+      "status": 200,
+      "bytes": 353508465,
+      "anonymous": true,
+      "url": "https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.1.0/group-explorer-browser-v1.1.0.zip"
+    },
+    {
+      "name": "group-explorer-local-windows-x64-v1.1.0.zip",
+      "status": 200,
+      "bytes": 515201422,
+      "anonymous": true,
+      "url": "https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.1.0/group-explorer-local-windows-x64-v1.1.0.zip"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "status": 200,
+      "bytes": 210,
+      "anonymous": true,
+      "url": "https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.1.0/SHA256SUMS.txt"
+    }
+  ],
+  "release_url": "https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/tag/v1.1.0",
+  "published_at": "2026-09-08T04:13:33Z",
+  "pages_run": "https://github.com/BIOcanse/philadelphia-assessment-group-explorer/actions/runs/34186239198",
+  "live_assets": {
+    "status": "passed",
+    "files": [
+      {
+        "file": "index.html",
+        "sha256": "26a36dd15a7980eeab9ae99eafb451f62797619091591d656cc7770ee731a912",
+        "bytes": 7447
+      },
+      {
+        "file": "app.js",
+        "sha256": "3c9355bcee08402a9e385824d283dc1f7dc3b141d8d79625e6fd96d33852e100",
+        "bytes": 15007
+      },
+      {
+        "file": "research.js",
+        "sha256": "ecc47fd091ce391454ec8ebeb503da05c8e1051a51c4bf2d1e1880e20a56b689",
+        "bytes": 65575
+      },
+      {
+        "file": "research.css",
+        "sha256": "8ba94e7d603d1f85fa968e44cbf0ee612d4f49513619b8c7bb3c86039a72340e",
+        "bytes": 10253
+      },
+      {
+        "file": "research-data.json.gz",
+        "sha256": "5b374ef052b4b6ab610f9c35560f1f97f2a5f68e5565505db7bd9fcdcdedb274",
+        "bytes": 1378079
+      }
+    ]
+  },
+  "live_browser": {
+    "ui": {
+      "status": "passed",
+      "edition": "public",
+      "base": "https://biocanse.github.io/philadelphia-assessment-group-explorer/",
+      "checks": [
+        "overview original cohort ratio",
+        "directory is supporting, initially hidden",
+        "overview does not load the full query catalog",
+        "view extremes renders",
+        "main n100 full group count",
+        "support selection updates exact group count",
+        "all-order histogram counts every supported expression",
+        "one-field histogram count",
+        "all high-order extreme ties remain listed",
+        "original calibration basis explained",
+        "view controls renders",
+        "joint controls expose original support retention",
+        "focal standardized contrast is 6.818 pp",
+        "ID hover includes mean and actual conditions",
+        "Escape dismisses hover",
+        "keyboard focus shows group explanation",
+        "group opens in an accessible detail dialog",
+        "full group distributions retained",
+        "group detail preserves research view",
+        "closing detail preserves research view",
+        "unavailable standardization is explicitly missing",
+        "no common support is never plotted as zero",
+        "view interactions renders",
+        "I1 four observed cell counts",
+        "observed minus additive endpoint equals four-cell contrast",
+        "adjusted residual contrast uses pp correctly",
+        "interaction support filter runs",
+        "view algebra renders",
+        "normalized actual profile-kernel diagonal is one",
+        "degree zero kernel is constant",
+        "saved n1000 order-two maximum error",
+        "weighted kernel diagonal equals profile count",
+        "matrix window moves to new real profiles",
+        "matrix exports CSV",
+        "view validation renders",
+        "main spatial predictive gain",
+        "forward split shows actual evaluation support",
+        "view coverage renders",
+        "unknown gated community data stays unavailable",
+        "missingness toggle recomputes exact complement",
+        "view overview renders",
+        "garage cohort changes research counts",
+        "view extremes renders",
+        "garage expression histogram uses its own census",
+        "view controls renders",
+        "garage control support",
+        "view interactions renders",
+        "garage four-cell explorer",
+        "view algebra renders",
+        "garage observed-state algebra",
+        "view validation renders",
+        "garage validation retains negative result",
+        "view directory renders",
+        "full directory retains exact n100 queries",
+        "projection scope remains explicit",
+        "directory cohort stays synchronized with research cohort",
+        "view overview renders",
+        "1200px desktop overview has no horizontal page overflow",
+        "view interactions renders",
+        "1200px desktop interaction view has no page overflow",
+        "existing deep link restores exact group",
+        "deep link restores research view",
+        "no uncaught JavaScript errors",
+        "no failed asset/API responses",
+        "browser edition makes no local/backend query requests"
+      ],
+      "errors": [],
+      "badResponses": [],
+      "requestCount": 20
+    },
+    "race": {
+      "status": "passed",
+      "base": "https://biocanse.github.io/philadelphia-assessment-group-explorer/",
+      "checks": [
+        "unqualified profile uses the visible garage cohort",
+        "late atlas response cannot replace the newer mode",
+        "late atlas does not replace page points",
+        "directory heading follows changed cohort",
+        "closing a loading dialog clears deep link",
+        "late group detail cannot restore dismissed deep link",
+        "late group response cannot reopen dialog",
+        "four-cell CSV with metric, units and additive expectation saved for reconciliation",
+        "no JavaScript errors during delayed response checks"
+      ],
+      "errors": []
+    },
+    "export_reconciliation": {
+      "status": "passed",
+      "kernel_cells": 576,
+      "four_cell_rows": 8
+    }
+  },
+  "completed_at": "2026-09-08T04:20:32.304877+00:00",
+  "application_commit": "056ecf4d2d77af1f301ec88fda19a165d30b81c7",
+  "workbench_url": "https://biocanse.github.io/philadelphia-assessment-group-explorer/?v=1.1.0#view=overview",
+  "previous_release_retained": "v1.0.0"
 }
