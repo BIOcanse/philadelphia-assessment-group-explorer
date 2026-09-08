@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "english_readme": true,
+  "relative_readme_links_checked": [
+    "docs/local-edition.md",
+    "docs/browser-edition.md",
+    "docs/methodology.md",
+    "docs/browser-edition.md",
+    "docs/validation.md",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "repository": "https://github.com/BIOcanse/philadelphia-assessment-group-explorer",
+  "release": "https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/tag/v1.0.0"
+}

@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "checks": [
+    "Initial all-group filter count",
+    "Legacy M025 ratio",
+    "Every main-cohort variable is visible",
+    "Matrix profile alias maps to group",
+    "Invalid lookup clears old detail",
+    "Garage filter count",
+    "Every garage variable is visible",
+    "Main n>=500 count",
+    "Pagination preserves distinct group IDs",
+    "Previous page restores original IDs",
+    "Condition filter and complete histogram agree",
+    "Histogram click applies percentage bounds",
+    "Clicking a plotted point resolves its canonical ID",
+    "Sampled atlas scope is explicit",
+    "Clicking an atlas point opens group details",
+    "Filtered CSV downloads",
+    "Empty filter renders a zero count",
+    "Mobile layout has no page overflow",
+    "No browser JavaScript errors",
+    "Public page has no localhost or backend API requests"
+  ],
+  "errors": []
+}

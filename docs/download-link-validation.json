@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "anonymous_download_links": [
+    {
+      "name": "group-explorer-browser-v1.0.0.zip",
+      "status": 200,
+      "content_length": 341603994
+    },
+    {
+      "name": "group-explorer-local-windows-x64-v1.0.0.zip",
+      "status": 200,
+      "content_length": 511340716
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "status": 200,
+      "content_length": 210
+    }
+  ]
+}
