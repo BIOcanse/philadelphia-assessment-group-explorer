@@ -1,18 +1,20 @@
 {
-  "version": "v1.2.0",
+  "version": "v1.3.0",
   "data_version": "groups-b5a7e308e8c6",
   "assets": [
     {
-      "name": "group-explorer-browser-v1.2.0.zip",
-      "bytes": 354206717,
-      "sha256": "dbc5dfa31e59259b7e9ec0f9226ace23df4de76e73306b94c5dac0bf7dda5f9e"
+      "name": "group-explorer-browser-v1.3.0.zip",
+      "bytes": 354107861,
+      "sha256": "c9e2d67d23228ad71648fd8a9e0bf99ccfcd551e01c6af4b53e409738db35802"
     },
     {
-      "name": "group-explorer-local-windows-x64-v1.2.0.zip",
-      "bytes": 515546919,
-      "sha256": "b6094ebf3b7f911b87ecef15c742a27371ca256f841ef609b9d48d1679449296"
+      "name": "group-explorer-local-windows-x64-v1.3.0.zip",
+      "bytes": 530170904,
+      "sha256": "0828252d3f9ad26e90084373074c631810d3a3dc28325cdd956f8b7bf54c127c"
     }
   ],
   "local_files": 3231,
-  "archive_seconds": 26.25540830002865
+  "archive_seconds": 33.264191271000016,
+  "packaging": "GitHub Actions; verify all member contents against the local expected inventory",
+  "workflow_run": 34194189298
 }
