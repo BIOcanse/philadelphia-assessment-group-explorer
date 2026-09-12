@@ -1,22 +1,22 @@
-# Formula Validation v1.4.1
+# Individual Training Study v1.5.0
 
 [Read the research story](https://biocanse.github.io/philadelphia-assessment-group-explorer/research-story.html) · [Full workbench](https://biocanse.github.io/philadelphia-assessment-group-explorer/)
 
-This patch restores condition tooltips and exact group-ID navigation in the formula story. All statistical results are unchanged from v1.4.0.
+This release adds 18 matched internal experiments with individual-transaction training, continuous features, regularization and individual-error selection. Predictions are aggregated over held-out members of the original condition groups. Binned inputs, marginal-group selection and nonlinear additive formulas remain explicit comparators.
 
-The separate research story now reports completed validation of our algebraic formula and the method that derives it. Scores compare predicted and observed GROUP arithmetic means of sale/original-assessment ratios.
+The fitted all-order kernel equation is saved with its parameters and coefficients. It provides partial predictive structure, not a recovered universal law. Previously inspected test sets make this retrospective internal validation.
 
-- 30 real-data experiments cover nested training fractions, train-only degree selection through all 20/21 fields, and profile, spatial, and chronological holdouts. 180 known-answer settings test additive and higher-order signals, noise, and unseen states.
-- In the main fixed holdout, the prespecified additive formula achieves r = 0.774, predictive R² = 0.508 and RMSE = 1.37 percentage points on 74 eligible single-field groups. The original unregularized degree-three formula has R² = −0.425.
-- All 7,598,906 existing canonical groups were scanned against their held-out members. Among 132,602 main-sample groups with distinct test membership and at least 30 test transactions, additive and degree-three R² are 0.376 and −0.261. This is a separate group-scoring family; overlapping groups are not independent evidence.
-- Explicit-design checks support the mathematical equivalence. Known four-way signals can be recovered when training support identifies them. Exact reconstruction and greater complexity do not guarantee stable prediction; joint gains vary across splits. Regularization and more stable training-only selection are proposed next steps, not completed improvements.
-- Eight figures and three tables show findings, learning curves, transfer scores, and known-answer experiments. The evidence ZIP includes saved formulas, split records, scores, source checks, and an executed audit notebook. Desktop rendering, source interaction, and independent numerical validation passed.
-- Original analyses, workbench tools, data, and group IDs are preserved. Findings remain internal to the retained historical samples; they do not establish causal effects or citywide generalization.
+- The main fixed holdout gives individual R² 0.077, single-field group R² 0.489 and pair-group R² 0.478 for the continuous, individual-selected equation.
+- All 7,598,906 canonical groups were rescored. Across 132,602 main groups with distinct held-out membership and at least 30 test transactions, R² is 0.429 versus 0.396 for the continuous additive comparator. These are overlapping groups, not independent samples.
+- Single/pair group metrics additionally require at least two supported groups per partition. The two scoring families have different weights and denominators.
+- The bilingual narrative includes chosen kernel parameters, matched comparisons, learning curves, transfer scores and residual-group links with condition tooltips.
+- The evidence bundle contains saved equations, splits, individual predictions and independent validation scripts. The preceding stage's evidence ZIP, including its audit notebook, is retained inside it.
+- Original analyses, 30 previous experiments, 180 known-answer settings, workbench tools and group IDs are preserved. Findings do not establish causal effects or citywide generalization.
 
 Both complete editions are maintained:
 
-- [Browser edition v1.4.1](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.4.1/group-explorer-browser-v1.4.1.zip)
-- [Local Windows x64 edition v1.4.1](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.4.1/group-explorer-local-windows-x64-v1.4.1.zip)
-- [Checksums](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.4.1/SHA256SUMS.txt)
+- [Browser edition v1.5.0](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.5.0/group-explorer-browser-v1.5.0.zip)
+- [Local Windows x64 edition v1.5.0](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.5.0/group-explorer-local-windows-x64-v1.5.0.zip)
+- [Checksums](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/releases/download/v1.5.0/SHA256SUMS.txt)
 
-The archives update three publication files per edition in the verified v1.2.0 base packages: the story, its evidence ZIP, and the README. All other members are preserved and individually verified; they are also unchanged in v1.3.0. The local edition includes its runtime and full data. Prior releases remain available.
+The archives update three publication files per edition in the verified v1.2.0 base packages: the story, evidence ZIP and README. Other members are preserved and individually verified. The local edition includes its runtime and full data. Prior releases remain available. See the [protocol](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/blob/main/docs/raw-feature-formula.md) and [results](https://github.com/BIOcanse/philadelphia-assessment-group-explorer/blob/main/docs/raw-feature-formula-results.md).

@@ -17,7 +17,7 @@ OUT = ROOT / 'outputs/group_publication'
 LOCAL = OUT / 'local'
 DOWNLOADS = OUT / 'downloads'
 TEMPLATES = ROOT / 'workbench/publication'
-VERSION = 'v1.4.1'
+VERSION = 'v1.5.0'
 PYTHON_ZIP = 'python-3.13.15-embed-amd64.zip'
 PYTHON_SHA = 'd1f04d990aee1253d8569e8e5104e30fa9f5fa830899f14843448872d936a2cf'
 APP_FILES = [
@@ -138,7 +138,10 @@ def prepare(repository):
                                  'scripts/scan_formula_groups.py','scripts/scan_formula_groups.cpp',
                                  'scripts/report_formula_validation.py','scripts/notebook_formula_validation.py',
                                  'scripts/verify_report_desktop.mjs','scripts/report_group_links.mjs',
-                                 'scripts/verify_formula_story_groups.mjs','notebooks/formula_validation.ipynb']:
+                                 'scripts/verify_formula_story_groups.mjs','notebooks/formula_validation.ipynb',
+                                 'scripts/raw_feature_formula.py','scripts/validate_raw_feature_formula.py',
+                                 'scripts/scan_raw_formula_groups.py','scripts/report_raw_feature_formula.py',
+                                 'scripts/reuse_report_runtime.mjs']:
         copy(ROOT / relative, repository / relative)
     for name in ['Start.cmd', 'Stop.cmd', 'start-local.ps1']:
         copy(ROOT / 'workbench/distribution' / name, repository / 'workbench/distribution' / name)
@@ -159,6 +162,11 @@ def prepare(repository):
     copy(ROOT / 'docs/report_group_link_hints.md', repository / 'docs/report-group-link-hints.md')
     copy(ROOT / 'outputs/formula_validation/validation.json', repository / 'docs/formula-validation-checks.json')
     copy(ROOT / 'outputs/formula_validation_report/report_delivery_validation.json', repository / 'docs/formula-validation-delivery.json')
+    copy(ROOT / 'docs/raw_feature_formula.md', repository / 'docs/raw-feature-formula.md')
+    copy(ROOT / 'docs/raw_feature_formula_results.md', repository / 'docs/raw-feature-formula-results.md')
+    copy(ROOT / 'docs/report_runtime_reuse.md', repository / 'docs/report-runtime-reuse.md')
+    copy(ROOT / 'outputs/raw_feature_formula/validation.json', repository / 'docs/raw-feature-formula-checks.json')
+    copy(ROOT / 'outputs/raw_feature_formula_report/report_delivery_validation.json', repository / 'docs/raw-feature-formula-delivery.json')
     copy(ROOT / 'docs/research_story.md', repository / 'docs/research-story.md')
     copy(ROOT / 'outputs/research_story/validation.json', repository / 'docs/research-story-validation.json')
     copy(ROOT / 'outputs/research_story/report_delivery_validation.json', repository / 'docs/research-story-delivery.json')

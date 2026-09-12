@@ -1,5 +1,13 @@
 # Research workbench validation
 
+## Individual training study v1.5.0
+
+The current experiment freezes 18 matched splits before fitting and compares continuous/binned inputs, individual/marginal-group selection, nonlinear additive and all-order regularized kernels. Every saved test prediction is independently reloaded; supported single/pair group means, weights, r and predictive R² are recomputed from individual records. Complete catalog scanning validates original test counts and deduplicates test memberships; 40 fixed spaced groups per cohort receive additional direct-member prediction checks.
+
+The old pinned plugin build modules are no longer installed. This release reuses the preceding self-contained report's compiled canonical reader, with an exact core-runtime hash check. Only the reviewed payload and existing condition-hint adapter change. The no-JavaScript fallback is captured from the actual new canonical render. Project Playwright checks verify all blocks, charts and tables at 1440/1200 pixels, source interaction and the static fallback; the removed official plugin verifier is not claimed. See [runtime preservation](report-runtime-reuse.md).
+
+Numerical evidence: [raw-feature-formula-checks.json](raw-feature-formula-checks.json). Rendering evidence: [raw-feature-formula-delivery.json](raw-feature-formula-delivery.json). [Protocol](raw-feature-formula.md), [results](raw-feature-formula-results.md), and [publication record](raw-feature-formula-publication.json) describe the current scope. Earlier stages below remain historical evidence.
+
 ## Formula validation v1.4.1
 
 The v1.4.1 patch restores relative links in the interactive reader and source-backed condition hints. Both example IDs have passed real clicks into their exact group details in the local edition, and the workbench-return link is checked inside the visible reader. Statistical scores are unchanged from v1.4.0; final public checks are in the publication record linked below.

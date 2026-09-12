@@ -1,0 +1,174 @@
+{
+  "status": "passed",
+  "cases": 18,
+  "core": {
+    "all_order_expansion": "passed",
+    "cancelling_marginal_example": "passed",
+    "dense_solve": "passed",
+    "train_only_scaling": "passed"
+  },
+  "checks": [
+    {
+      "cohort": "main",
+      "case": "random-20260908-050",
+      "test_rows": 960,
+      "equation_max_residual": 4.094780070573734e-12,
+      "predictions": "all rows independently reloaded",
+      "group_scores": "all nonempty thresholds recomputed"
+    },
+    {
+      "cohort": "main",
+      "case": "random-20260908-100",
+      "test_rows": 960,
+      "equation_max_residual": 1.9048651545006123e-13,
+      "predictions": "all rows independently reloaded",
+      "group_scores": "all nonempty thresholds recomputed"
+    },
+    {
+      "cohort": "main",
+      "case": "random-20260909-050",
+      "test_rows": 960,
+      "equation_max_residual": 3.199523979091623e-13,
+      "predictions": "all rows independently reloaded",
+      "group_scores": "all nonempty thresholds recomputed"
+    },
+    {
+      "cohort": "main",
+      "case": "random-20260909-100",
+      "test_rows": 960,
+      "equation_max_residual": 2.7658431100974212e-14,
+      "predictions": "all rows independently reloaded",
+      "group_scores": "all nonempty thresholds recomputed"
+    },
+    {
+      "cohort": "main",
+      "case": "random-20260910-050",
+      "test_rows": 960,
+      "equation_max_residual": 3.469446951953614e-14,
+      "predictions": "all rows independently reloaded",
+      "group_scores": "all nonempty thresholds recomputed"
+    },
+    {
+      "cohort": "main",
+      "case": "random-20260910-100",
+      "test_rows": 960,
+      "equation_max_residual": 3.6456393459616265e-12,
+      "predictions": "all rows independently reloaded",
+      "group_scores": "all nonempty thresholds recomputed"
+    },
+    {
+      "cohort": "main",
+      "case": "profile-20260908-100",
+      "test_rows": 955,
+      "equation_max_residual": 2.4077961846558082e-15,
+      "predictions": "all rows independently reloaded",
+      "group_scores": "all nonempty thresholds recomputed"
+    },
+    {
+      "cohort": "main",
+      "case": "spatial-20260908-100",
+      "test_rows": 943,
+      "equation_max_residual": 4.0245584642661925e-15,
+      "predictions": "all rows independently reloaded",
+      "group_scores": "all nonempty thresholds recomputed"
+    },
+    {
+      "cohort": "main",
+      "case": "time-20260908-100",
+      "test_rows": 989,
+      "equation_max_residual": 4.191091917959966e-15,
+      "predictions": "all rows independently reloaded",
+      "group_scores": "all nonempty thresholds recomputed"
+    },
+    {
+      "cohort": "positive_garage",
+      "case": "random-20260908-050",
+      "test_rows": 431,
+      "equation_max_residual": 3.3029134982598407e-15,
+      "predictions": "all rows independently reloaded",
+      "group_scores": "all nonempty thresholds recomputed"
+    },
+    {
+      "cohort": "positive_garage",
+      "case": "random-20260908-100",
+      "test_rows": 431,
+      "equation_max_residual": 6.994405055138486e-15,
+      "predictions": "all rows independently reloaded",
+      "group_scores": "all nonempty thresholds recomputed"
+    },
+    {
+      "cohort": "positive_garage",
+      "case": "random-20260909-050",
+      "test_rows": 431,
+      "equation_max_residual": 1.0769163338864018e-14,
+      "predictions": "all rows independently reloaded",
+      "group_scores": "all nonempty thresholds recomputed"
+    },
+    {
+      "cohort": "positive_garage",
+      "case": "random-20260909-100",
+      "test_rows": 431,
+      "equation_max_residual": 2.7755575615628914e-16,
+      "predictions": "all rows independently reloaded",
+      "group_scores": "all nonempty thresholds recomputed"
+    },
+    {
+      "cohort": "positive_garage",
+      "case": "random-20260910-050",
+      "test_rows": 431,
+      "equation_max_residual": 3.219646771412954e-15,
+      "predictions": "all rows independently reloaded",
+      "group_scores": "all nonempty thresholds recomputed"
+    },
+    {
+      "cohort": "positive_garage",
+      "case": "random-20260910-100",
+      "test_rows": 431,
+      "equation_max_residual": 3.247402347028583e-15,
+      "predictions": "all rows independently reloaded",
+      "group_scores": "all nonempty thresholds recomputed"
+    },
+    {
+      "cohort": "positive_garage",
+      "case": "profile-20260908-100",
+      "test_rows": 418,
+      "equation_max_residual": 4.39648317751562e-14,
+      "predictions": "all rows independently reloaded",
+      "group_scores": "all nonempty thresholds recomputed"
+    },
+    {
+      "cohort": "positive_garage",
+      "case": "spatial-20260908-100",
+      "test_rows": 545,
+      "equation_max_residual": 2.886579864025407e-14,
+      "predictions": "all rows independently reloaded",
+      "group_scores": "all nonempty thresholds recomputed"
+    },
+    {
+      "cohort": "positive_garage",
+      "case": "time-20260908-100",
+      "test_rows": 437,
+      "equation_max_residual": 1.304512053934559e-15,
+      "predictions": "all rows independently reloaded",
+      "group_scores": "all nonempty thresholds recomputed"
+    }
+  ],
+  "source_hashes": {
+    "docs\\raw_feature_formula.md": "0fae68c31974b5e8213abf16c839f6986196ab38411b4e1600298b7c69ad2231",
+    "scripts\\raw_feature_formula.py": "d209ba56c02170d7e37dff882dd27eb336a4a9627a445743fdca39baa6d092e1",
+    "scripts\\formula_validation.py": "8708d2f54b24d222021def21f6050f54ceb86e151817a10b0516242ec17ddc0f",
+    "outputs\\enrichment\\sales_enriched_2017.csv": "8456f12a2c5a290852b57adbe15c0009ab26a6d801ad8d30eb91ac467ec3d8b3",
+    "outputs\\group_means\\record_bins.csv": "504671e6a3c9deab0a4a46cb97c35501e8b25a466313e0038e74730eb3336e92",
+    "outputs\\group_means\\bin_definitions.json": "1c29b00be15337061b12a0b4dcba0977b7a202c78d7d4e1daecbee7935038080",
+    "scripts/query_group_means.py": "80b710a5cd11497201e6862a14ed54355b55a037e1d3f43f5947f6b92ae5af90",
+    "scripts/group_mean_schema.py": "ae6f6f99a01d052f4c2c3deec76e1a13c81faad241f0099c0d069174289efa7f",
+    "scripts/scan_raw_formula_groups.py": "aae2c33171e16dc5f9c1c0199bc2119eec7e190bc628c2b05943e588b855cd14",
+    "scripts/scan_formula_groups.cpp": "fc36ee190044b5e5700723631b49d0dd3725b821546dd44680d4cbc7fffc198a",
+    "outputs/formula_validation/scan_formula_groups.exe": "d75309ce3181eb8a7f961021e818e9faa2812cf8f930f0b7b5221449f2bd25f6",
+    "outputs/group_means/main.input.json": "83f00d47dd5a34ad66e928fdc59b35046a679bd2f46abacd43c82f7f9a358daa",
+    "outputs/group_means/positive_garage.input.json": "51a86b3c558f3eb35d9d04607d42ea8b75145fb951848954fb399925d7a39f5f"
+  },
+  "validator_sha256": "577ee7613b293115341ef53f0bf344e872298fb403dccc5ab9fa545715bc6321",
+  "equation_scope": "all saved predictions; independent residual check first 8 train rows per equation; full residual checked by fitter",
+  "limitation": "retrospective internal tests; not external confirmation"
+}
