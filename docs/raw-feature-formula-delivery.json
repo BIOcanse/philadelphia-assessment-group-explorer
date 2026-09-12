@@ -24,10 +24,10 @@
       "status": "passed"
     }
   ],
-  "artifact_sha256": "e46b13d97fefc38a490653ebcdeb27fe50bdd28182ae692dad4c73ec8f6213c5",
+  "artifact_sha256": "15e26f32f51fc83526a4cb96283177716f2b58a8386359b623d5b3a7e0905fcf",
   "base_html_sha256": "4491b00c221a53680b6ad7aba51409ae7b5be4f6cb9748a5ecbaf00c41626051",
   "core_runtime_sha256": "cd53c78b32f7473ee4e24dac2b47f43e3e96803395bd9ad46883cd771e08f86a",
   "loader_sha256": "1a525455de44807051d0a2cc4d515bb8b9bb1f0c7101b9f0cf43205f0ceea87e",
-  "html_sha256": "097fca88fc3b2c45e2905116cf88a1d48d4876ce074d1118a9a3b132ef96ba1e",
+  "html_sha256": "f6cf0ec4eb795842c5a70eae955b37d6c43b35710b267a0001cfd5f4e86612c1",
   "runtime_core_unchanged": true
 }
