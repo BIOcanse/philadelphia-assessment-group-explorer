@@ -32,4 +32,4 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --draft --title "Formula Validation $RELEASE_TAG" --notes-file workbench/publication/release-notes.md packaged/group-explorer-*.zip packaged/SHA256SUMS.txt packaged/edition-patch-manifest.json
+          gh release create "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --draft --title "Individual Training Study $RELEASE_TAG" --notes-file workbench/publication/release-notes.md packaged/group-explorer-*.zip packaged/SHA256SUMS.txt packaged/edition-patch-manifest.json
