@@ -136,7 +136,7 @@ for cohort in COHORT:
     for role in ['raw_row', 'raw_additive']:
         d = meta['selected'][role]
         equations.append(dict(cohort=COHORT[cohort], model=MODEL[role], family=d['family'],
-                              tau=d['tau'], ell=d['ell'], penalty=f"{d['penalty']:.0e}"))
+                              tau=d['tau'], ell=d['ell'], penalty=f"λ = {d['penalty']:.0e}"))
 data('raw_equations', pd.DataFrame(equations), ['outputs/raw_feature_formula/main/random-20260908-100/case.json',
      'outputs/raw_feature_formula/positive_garage/random-20260908-100/case.json'],
      'Selected seed-08 full-development equations; parameters chosen on inner validation only.')
@@ -186,7 +186,7 @@ data('raw_learning', curve, ['outputs/raw_feature_formula/metrics.csv'],
      'Main pair-group R2, n>=30; mean and full range over three seeds sharing the same test set, not confidence intervals.')
 current.append(prose('raw-learning', f'''## D · 数据加倍后是否更稳定 / Learning and transfer
 
-下图把主样本训练量从1,972增加到3,943笔，始终预测相同960笔留出交易的双变量组均值。线为三个种子的均值，来源表保留最小值、最大值；它们共享测试集，不能当作三份独立证据。
+下图把主样本训练量从1,972增加到3,943笔，始终预测相同960笔留出交易的双变量组均值。蓝线为分档加性，棕线为连续加性，绿线为允许联合项的连续逐笔流程。线为三个种子的均值，来源表保留最小值、最大值；它们共享测试集，不能当作三份独立证据。
 
 合计18套比较中，“允许联合项并按逐笔选模”的双变量组误差低于连续加性对照的有{wins}套，数值相同{ties}套，其余更高。选到加性时，两者本来就是同一个模型；选到联合核也不能直接推出作用阶数。改善是否稳定，比某一套里谁略胜更重要。
 
@@ -194,7 +194,9 @@ Learning curves use held-out outcomes only. Seed variation is sensitivity to tra
 '''))
 current.append(chart('raw-learning-chart', '增加训练数据后的双变量组预测 / Pair-group learning curve',
     'line', 'raw_learning', '训练交易数 / Training n', '平均预测 R²', '公式 / Formula'))
-transfer = results[results.kind.ne('random')&results.order.eq(2)&results.minimum_n.eq(30)&results.model.isin(['raw_row', 'raw_additive'])].copy()
+transfer = results[results.kind.ne('random')&results.order.eq(2)&results.minimum_n.eq(30)&results.model.isin(['bins_additive', 'raw_additive', 'raw_row'])].copy()
+transfer['_model_order'] = transfer.model.map({'bins_additive': 0, 'raw_additive': 1, 'raw_row': 2})
+transfer = transfer.sort_values(['cohort', 'kind', '_model_order']).drop(columns='_model_order')
 transfer['样本 / Cohort'] = transfer.cohort.map(COHORT); transfer['公式 / Formula'] = transfer.model.map(MODEL)
 transfer['留出 / Holdout'] = transfer.kind.map(dict(profile='未见组合 / Profile', spatial='空间网格 / Spatial', time='较晚成交 / Time'))
 transfer['预测 R²'] = transfer.r2
@@ -214,6 +216,7 @@ scatter = scatter[scatter.model.eq('raw_row')&scatter.order.eq(1)].copy()
 g = Groups('main')
 scatter['group_id'] = [g.lookup(g.condition_ids(codes.split()))['group_id'] for codes in scatter.condition_codes]
 scatter['实际组均 / Observed mean · %'] = 100*scatter.actual
+scatter['实际偏离100% / Observed bias · pp'] = 100*(scatter.actual-1)
 scatter['预测误差 / Error · pp'] = 100*(scatter.predicted-scatter.actual)
 data('raw_residuals', scatter, ['outputs/raw_feature_formula/main/random-20260908-100/groups.csv'],
      'Each point is an original single-field group using only test members; group IDs refer to full-cohort catalog entries.')
@@ -221,12 +224,12 @@ current.append(prose('raw-groups', f'''## E · 最后仍然回到具体组 / Ret
 
 任意阶目录重新检查了7,598,906个正式组。去除空测试组并按测试成员去重后，n≥30的主样本组有132,602个、车库组45,285个；它们仍然大量重叠。连续逐笔选模在这两批组上的R²分别为{mc.r2:.3f}、{gc.r2:.3f}。
 
-下图每个点为一个主样本单变量留出组，横轴为实际成交／估值组均百分比，纵轴为预测误差（百分点）。悬停数据可查条件，下面的正式组号还可直接返回原工作台。编号相同，但工作台的完整组统计与这里的留出成员统计有不同分母。
+下图每个点为一个主样本单变量留出组，横轴为实际成交／估值组均相对100%的偏离（百分点），纵轴为预测误差（百分点）。横轴+10表示组均比率110%。悬停数据可查条件，下面的正式组号还可直接返回原工作台。编号相同，但工作台的完整组统计与这里的留出成员统计有不同分母。
 
 The complete catalog is evaluated by summing individual predictions, including variation within old bins. Overlapping group counts are descriptive coverage, not independent sample sizes.
 ''', 'raw-catalog'))
 current.append(chart('raw-residual-chart', '哪些条件仍预测不准 / Remaining group residuals',
-                     'scatter', 'raw_residuals', '实际组均 / Observed mean · %', '预测误差 / Error · pp'))
+                     'scatter', 'raw_residuals', '实际偏离100% / Observed bias · pp', '预测误差 / Error · pp'))
 group_links = pd.concat([pd.DataFrame(datasets['group_links']),
     scatter[['group_id', 'conditions']], worst[['group_id', 'conditions']]]).drop_duplicates('group_id')
 sources[:] = [s for s in sources if s['id'] != 'group_links']

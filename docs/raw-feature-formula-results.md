@@ -42,7 +42,7 @@ Compare both calibration and correlation. A higher r alone does not establish a 
 
 ## D · 数据加倍后是否更稳定 / Learning and transfer
 
-下图把主样本训练量从1,972增加到3,943笔，始终预测相同960笔留出交易的双变量组均值。线为三个种子的均值，来源表保留最小值、最大值；它们共享测试集，不能当作三份独立证据。
+下图把主样本训练量从1,972增加到3,943笔，始终预测相同960笔留出交易的双变量组均值。蓝线为分档加性，棕线为连续加性，绿线为允许联合项的连续逐笔流程。线为三个种子的均值，来源表保留最小值、最大值；它们共享测试集，不能当作三份独立证据。
 
 合计18套比较中，“允许联合项并按逐笔选模”的双变量组误差低于连续加性对照的有14套，数值相同1套，其余更高。选到加性时，两者本来就是同一个模型；选到联合核也不能直接推出作用阶数。改善是否稳定，比某一套里谁略胜更重要。
 
@@ -53,7 +53,7 @@ Learning curves use held-out outcomes only. Seed variation is sensitivity to tra
 
 任意阶目录重新检查了7,598,906个正式组。去除空测试组并按测试成员去重后，n≥30的主样本组有132,602个、车库组45,285个；它们仍然大量重叠。连续逐笔选模在这两批组上的R²分别为0.429、0.316。
 
-下图每个点为一个主样本单变量留出组，横轴为实际成交／估值组均百分比，纵轴为预测误差（百分点）。悬停数据可查条件，下面的正式组号还可直接返回原工作台。编号相同，但工作台的完整组统计与这里的留出成员统计有不同分母。
+下图每个点为一个主样本单变量留出组，横轴为实际成交／估值组均相对100%的偏离（百分点），纵轴为预测误差（百分点）。横轴+10表示组均比率110%。悬停数据可查条件，下面的正式组号还可直接返回原工作台。编号相同，但工作台的完整组统计与这里的留出成员统计有不同分母。
 
 The complete catalog is evaluated by summing individual predictions, including variation within old bins. Overlapping group counts are descriptive coverage, not independent sample sizes.
 

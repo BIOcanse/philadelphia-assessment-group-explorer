@@ -141,7 +141,7 @@ def prepare(repository):
                                  'scripts/verify_formula_story_groups.mjs','notebooks/formula_validation.ipynb',
                                  'scripts/raw_feature_formula.py','scripts/validate_raw_feature_formula.py',
                                  'scripts/scan_raw_formula_groups.py','scripts/report_raw_feature_formula.py',
-                                 'scripts/reuse_report_runtime.mjs']:
+                                 'scripts/reuse_report_runtime.mjs','scripts/verify_raw_story_visuals.mjs']:
         copy(ROOT / relative, repository / relative)
     for name in ['Start.cmd', 'Stop.cmd', 'start-local.ps1']:
         copy(ROOT / 'workbench/distribution' / name, repository / 'workbench/distribution' / name)
