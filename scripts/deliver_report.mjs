@@ -2,13 +2,14 @@
 import { pathToFileURL } from 'node:url';
 import { readFileSync,writeFileSync } from 'node:fs';
 import path from 'node:path';
+import os from 'node:os';
 import { allowWorkbenchLinks,groupLinkHints } from './report_group_links.mjs';
 const [inputPath='outputs/report/artifact.json',outputPath='outputs/report/初版报告_Draft_Report.html',readyTimeout='20000',viewportScope]=process.argv.slice(2);
 if(viewportScope&&viewportScope!=='--desktop-only')throw new Error('Unknown viewport scope');
 const outputDir=path.dirname(outputPath);
 const readyTimeoutMs=Number(readyTimeout);
 if(!Number.isSafeInteger(readyTimeoutMs)||readyTimeoutMs<=0||readyTimeoutMs>60000)throw new Error('Reader timeout must be between 1 and 60000 ms.');
-const plugin='C:/Users/owner/.codex/plugins/cache/openai-curated-remote/data-analytics/0.2.10-13ceeea1f599/skills/build-report/scripts/';
+const plugin=path.join(os.homedir(),'.codex/plugins/cache/openai-curated-remote/data-analytics/0.2.10-13ceeea1f599/skills/build-report/scripts')+path.sep;
 const {buildPortableArtifact,readPackagedReaderRuntime}=await import(pathToFileURL(plugin+'build_portable_artifact.mjs'));
 const {deliverPortableArtifact}=await import(pathToFileURL(plugin+'deliver_portable_artifact.mjs'));
 const packaged=allowWorkbenchLinks(readPackagedReaderRuntime().html);
